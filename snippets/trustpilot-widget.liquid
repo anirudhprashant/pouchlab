@@ -1,0 +1,34 @@
+{% comment %}
+  Trustpilot Integration Widget
+  Add to header or footer for star rating visibility
+  Requires Trustpilot Business account setup
+{% endcomment %}
+
+{% if section.settings.enable_trustpilot %}
+  <!-- TrustBox widget - Mini -->
+  <div 
+    class="trustpilot-widget" 
+    data-locale="en-GB" 
+    data-template-id="53aa8807dec7e10d38f59f32" 
+    data-businessunit-id="{{ section.settings.trustpilot_business_id | default: 'YOUR-BUSINESS-ID' }}" 
+    data-style-height="150px" 
+    data-style-width="100%" 
+    data-theme="{{ section.settings.trustpilot_theme | default: 'light' }}"
+    data-stars="{{ section.settings.trustpilot_stars | default: '5' }}"
+  >
+    <a href="https://uk.trustpilot.com/review/pouchlab.co.uk" target="_blank" rel="noopener">Trustpilot</a>
+  </div>
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+{% endif %}
+
+{% comment %} Trustpilot Microdata for Product Pages {% endcomment %}
+{% if request.page_type == 'product' %}
+  <div itemscope itemtype="https://schema.org/Product" style="display: none;">
+    <meta itemprop="name" content="{{ product.title | escape }}" />
+    <meta itemprop="image" content="{{ product.featured_image | image_url: width: 600 | prepend: 'https:' }}" />
+    <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+      <meta itemprop="ratingValue" content="{{ section.settings.avg_rating | default: '4.8' }}" />
+      <meta itemprop="reviewCount" content="{{ section.settings.review_count | default: '10000' }}" />
+    </div>
+  </div>
+{% endif %}

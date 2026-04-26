@@ -1,0 +1,740 @@
+{% comment %}
+  Structured data for Pouch Lab.
+  Keep homepage FAQ answers aligned with visible homepage copy.
+  Product schema is handled in sections/product-information.liquid via Shopify's built-in structured_data output.
+{% endcomment %}
+
+{% liquid
+  assign shop_url = shop.secure_url | default: shop.url
+  assign organization_name = shop.name
+  assign same_as_links = ''
+
+  if settings.social_instagram_link != blank
+    assign same_as_links = same_as_links | append: settings.social_instagram_link | append: '||'
+  endif
+  if settings.social_facebook_link != blank
+    assign same_as_links = same_as_links | append: settings.social_facebook_link | append: '||'
+  endif
+  if settings.social_twitter_link != blank
+    assign same_as_links = same_as_links | append: settings.social_twitter_link | append: '||'
+  endif
+  if settings.social_youtube_link != blank
+    assign same_as_links = same_as_links | append: settings.social_youtube_link | append: '||'
+  endif
+  if settings.social_tiktok_link != blank
+    assign same_as_links = same_as_links | append: settings.social_tiktok_link | append: '||'
+  endif
+
+  assign same_as_array = same_as_links | split: '||' | compact
+%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ organization_name | json }},
+  "url": {{ shop_url | json }}{% if settings.logo != blank %},
+  "logo": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }}{% endif %}{% if same_as_array.size > 0 %},
+  "sameAs": [
+    {% for social_url in same_as_array %}
+      {{ social_url | json }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]{% endif %}
+}
+</script>
+
+{% capture search_target %}{{ shop_url }}/search?q={search_term_string}{% endcapture %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ organization_name | json }},
+  "url": {{ shop_url | json }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": {{ search_target | json }}
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+{% if request.page_type == 'blog' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": {{ blog.title | json }},
+    "url": {{ shop_url | append: blog.url | json }}{% if blog.articles_count > 0 %},
+    "blogPost": [
+      {% for article in blog.articles limit: 10 %}
+        {
+          "@type": "BlogPosting",
+          "headline": {{ article.title | json }},
+          "url": {{ shop_url | append: article.url | json }},
+          "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]{% endif %}
+  }
+  </script>
+{% endif %}
+
+{% if request.page_type == 'index' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are nicotine pouches?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nicotine pouches are small, tobacco-free pouches that sit between the lip and gum and release nicotine without smoke or vapour. Popular brands on Pouch Lab include VELO, Nordic Spirit, PABLO, KILLA and XQS."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I use nicotine pouches?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Place a pouch between your upper lip and gum, leave it in place for around 20 to 60 minutes, then dispose of it responsibly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What nicotine strength should I choose?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Light strength is usually best for beginners, Medium suits regular users, and Strong or Extra Strong options are better for experienced users with higher nicotine tolerance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are nicotine pouches legal in the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nicotine pouches are sold in the UK, but the category is still evolving. ASH notes that nicotine pouches are not currently well regulated in the UK, so it is worth checking current guidance as the rules develop."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do nicotine pouches last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each pouch typically lasts around 20 to 60 minutes depending on the brand and strength."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I read more about nicotine pouches and stop-smoking support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For an overview of nicotine pouches, see ASH's nicotine pouches guidance. If you want help quitting smoking, the NHS recommends using your local Stop Smoking Service for support."
+        }
+      }
+    ]
+  }
+  </script>
+{% endif %}
+
+{% if request.page_type == 'collection' %}
+  {% assign collection_description = collection.description | strip_html | strip %}
+  {% if collection_description == blank %}
+    {% capture collection_description %}Shop {{ collection.title }} nicotine pouches at {{ organization_name }}.{% endcapture %}
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": {{ collection.title | json }},
+    "description": {{ collection_description | truncate: 300 | json }},
+    "url": {{ shop_url | append: collection.url | json }},
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": {{ collection.products_count | default: collection.products.size }},
+      "itemListElement": [
+        {% for product in collection.products limit: 10 %}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "url": {{ shop_url | append: product.url | json }},
+            "item": {
+              "@type": "Product",
+              "name": {{ product.title | json }},
+              "url": {{ shop_url | append: product.url | json }}{% if product.featured_image %},
+              "image": {{ product.featured_image | image_url: width: 1200 | prepend: 'https:' | json }}{% endif %}
+            }
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+  }
+  </script>
+{% endif %}
+
+
+{% if request.page_type == 'collection' and collection.handle == 'extra-strong' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What nicotine strength is considered extra strong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extra strong nicotine pouches typically contain 12mg or more of nicotine per pouch. In the UK market, this includes products from brands like VELO, KILLA, ICEBERG, Nordic Spirit and PABLO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are extra strong nicotine pouches safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extra strong nicotine pouches contain nicotine which is addictive. They are intended for adult smokers and experienced nicotine users only. Not suitable for pregnant women, breastfeeding mothers, or people under 18. Always follow the manufacturer's guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which UK brands make extra strong nicotine pouches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular UK extra strong brands include VELO, KILLA, PABLO, ICEBERG, Nordic Spirit, FUMI and NICPIX. PouchLab stocks the full range with free UK delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use extra strong nicotine pouches to quit smoking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many users transition from smoking to nicotine pouches as a harm-reduction approach. While not marketed as a cessation product, the controlled nicotine delivery can help manage cigarette cravings. Consult your GP for quit-smoking support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do extra strong nicotine pouches last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most extra strong nicotine pouches last 30 to 60 minutes per pouch, depending on the brand and individual usage patterns. Stronger pouches may have a slightly shorter effective duration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between strong and extra strong nicotine pouches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strong nicotine pouches typically contain 10-12mg of nicotine per pouch. Extra strong pouches contain 12mg or more, delivering a noticeably more intense nicotine hit. Extra strong is best suited to regular smokers or experienced pouch users."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ article.title | json }},
+  "description": {{ article.excerpt_or_content | truncate: 300 | json }},
+  "image": {% if article.image %}{{ article.image | image_url: width: 1200 | prepend: 'https:' | json }}{% else %}null{% endif %},
+  "author": {
+    "@type": "Organization",
+    "name": {{ shop.name | json }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ shop.logo | image_url: width: 600 | prepend: 'https:' | json }}
+    }
+  },
+  "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "dateModified": {{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ shop.url | append: article.url | json }}
+  },
+  "url": {{ shop.url | append: article.url | json }}
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article %}
+{% capture breadcrumb_list %}
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ shop.url | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Lab Report",
+      "item": {{ shop.url | append: '/blogs/lab-report' | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ article.title | json }},
+      "item": {{ shop.url | append: article.url | json }}
+    }
+  ]
+}
+{% endcapture %}
+<script type="application/ld+json">{{ breadcrumb_list }}</script>
+{% endif %}
+
+{% if request.page_type == 'collection' and collection %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ shop.url | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ collection.title | json }},
+      "item": {{ shop.url | append: collection.url | json }}
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'collection' and collection.handle == 'extra-strong' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What nicotine strength is considered extra strong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extra strong nicotine pouches typically contain 12mg or more of nicotine per pouch. In the UK market, this includes products from brands like VELO, KILLA, ICEBERG, Nordic Spirit and PABLO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are extra strong nicotine pouches safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extra strong nicotine pouches contain nicotine which is addictive. They are intended for adult smokers and experienced nicotine users only. Not suitable for pregnant women, breastfeeding mothers, or people under 18. Always follow the manufacturer's guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which UK brands make extra strong nicotine pouches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Popular UK extra strong brands include VELO, KILLA, PABLO, ICEBERG, Nordic Spirit, FUMI and NICPIX. PouchLab stocks the full range with free UK delivery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use extra strong nicotine pouches to quit smoking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many users transition from smoking to nicotine pouches as a harm-reduction approach. While not marketed as a cessation product, the controlled nicotine delivery can help manage cigarette cravings. Consult your GP for quit-smoking support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do extra strong nicotine pouches last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most extra strong nicotine pouches last 30 to 60 minutes per pouch, depending on the brand and individual usage patterns. Stronger pouches may have a slightly shorter effective duration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between strong and extra strong nicotine pouches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strong nicotine pouches typically contain 10-12mg of nicotine per pouch. Extra strong pouches contain 12mg or more, delivering a noticeably more intense nicotine hit. Extra strong is best suited to regular smokers or experienced pouch users."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'how-many-nicotine-pouches-per-day-complete-uk-guide-1' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many nicotine pouches can I use per day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most manufacturers recommend a maximum of 20 pouches per day, but this varies by nicotine strength. Starting with fewer pouches and monitoring how you feel is the safest approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do nicotine pouches last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most nicotine pouches last 20-60 minutes per pouch, depending on strength and individual usage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are nicotine pouches safer than smoking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Public Health England notes that nicotine pouches are likely substantially less harmful than smoking tobacco cigarettes, as they contain no tobacco leaf, no combustion, and no tar."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'stop-smoking-alternatives-uk-nicotine-pouches-complete-uk-guide-1' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the best alternatives to smoking in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best smoking alternatives in the UK include nicotine pouches, vaping, nicotine gum, patches and nasal sprays. Each has different pros and cons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are nicotine pouches better than vaping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicotine pouches and vapes both deliver nicotine without tobacco combustion. Pouches are more discreet with no vapour or odour. Neither is risk-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can nicotine pouches help me quit smoking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While not marketed as a quit-smoking product, many UK users transition from cigarettes to nicotine pouches as a harm-reduction approach. Consult your GP or local Stop Smoking Service for support."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'velo-vs-zyn-nicotine-pouches-1' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is stronger: VELO or ZYN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both VELO and ZYN offer similar strength ranges up to 12mg per pouch. VELO uses nicotine salt which some find smoother. ZYN uses freebase nicotine which may hit harder at equivalent mg levels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are VELO and ZYN available in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Both VELO and ZYN nicotine pouches are widely available in the UK through online retailers. PouchLab stocks a curated selection of both brands."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which tastes better: VELO or ZYN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Flavour preference is highly personal. VELO is known for mint and fruit with smooth delivery. ZYN is known for citrus and coffee. Both have loyal followings in the UK."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+
+{% if request.page_type == 'article' and article.handle == 'how-long-do-nicotine-pouches-last-uk-guide' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many nicotine pouches can I use per day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most manufacturers recommend a maximum of 20 pouches per day, but this varies by nicotine strength and individual tolerance. Start with fewer pouches and monitor how you feel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I reuse a nicotine pouch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Nicotine pouches are designed for single use. Once the nicotine and flavour have been depleted, the pouch should be disposed of responsibly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I leave a nicotine pouch in all day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most of the nicotine will be released within the first hour. After that, the pouch offers minimal effect but may cause gum irritation with prolonged contact. It is not recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do nicotine pouches stain teeth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlike traditional tobacco, quality nicotine pouches are formulated to minimise tooth staining. However, long-term use may cause some discolouration over time."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'nicotine-pouches-ingredients-uk-guide' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do nicotine pouches contain animal products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most nicotine pouches are vegan-friendly, made from plant-based fibres. Some brands may use animal-derived sweeteners - check the specific product label if this matters to you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are sweeteners in nicotine pouches safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The sweeteners used are food-grade and approved for consumption. Used in the quantities present in nicotine pouches, they are considered safe for adults."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can nicotine pouches cause cancer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlike tobacco products, nicotine pouches do not contain tobacco-specific nitrosamines (TSNAs) at meaningful levels. They are considered a reduced-risk alternative to smoking, though no nicotine product is completely risk-free."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'nicotine-pouches-and-anxiety-complete-uk-guide' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can nicotine pouches help with anxiety?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some users report that nicotine has a calming effect, which may help with anxiety in certain situations. However, nicotine can also trigger or worsen anxiety in some people. Individual responses vary significantly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can nicotine make anxiety worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. While nicotine can produce temporary relaxation, it is also a stimulant. For some people, especially those with anxiety disorders, nicotine can increase feelings of nervousness and physical anxiety symptoms."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'nicotine-pouches-teeth-effects-complete-uk-guide' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do nicotine pouches affect tooth health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlike smoking, nicotine pouches do not contain tar or smoke, which are the primary causes of tobacco-related tooth damage. However, long-term oral nicotine use may have other effects on oral health that are still being studied."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can nicotine pouches cause gum recession?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prolonged use of any oral nicotine product pressed against the gums may contribute to gum irritation or recession in the area of contact. Rotating placement and maintaining good oral hygiene can help minimise this risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do nicotine pouches stain teeth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quality nicotine pouches are formulated to minimise tooth staining compared to traditional tobacco products. However, some users may notice minor discolouration with long-term use."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+
+{% if request.page_type == 'article' and article.handle == 'nicotine-pouches-and-alcohol-uk-guide' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I use nicotine pouches before driving?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Nicotine pouches do not produce breath alcohol or impair driving in the way alcohol does. However, if you feel dizzy or unwell from combined use, do not drive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does using nicotine pouches at the pub make you more drunk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not directly, but the combination can impair judgment more than alcohol alone. The interaction between alcohol and nicotine is complex and individual - always err on the side of caution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will nicotine pouches show up on a breathalyser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Breathalysers test for alcohol, not nicotine. However, some workplace drug tests do test for nicotine metabolites - check your employer policy if this is a concern."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does alcohol make me want to use more nicotine pouches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research shows that alcohol consumption increases activity in the brain's reward pathways, making nicotine feel more satisfying. This can create a cycle where each substance reinforces the desire for the other."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'nicotine-pouches-and-weight-loss-complete-uk-guide' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do nicotine pouches suppress appetite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicotine is known to suppress appetite in some users, which is one reason some people who have quit smoking may notice weight changes. However, using nicotine pouches purely for appetite suppression is not recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can nicotine pouches help with weight management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While some users report reduced appetite when using nicotine, there are much healthier and more effective ways to manage weight. Using nicotine pouches for weight management is not advised."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do nicotine pouches burn calories?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicotine can increase metabolic rate slightly, which may burn a small number of additional calories. However, the health risks of nicotine use far outweigh any minor calorie-burning effect."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.page_type == 'article' and article.handle == 'fumo-vs-zyn-nicotine-pouches-complete-guide' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is stronger: FUMI or ZYN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FUMI is generally considered stronger than ZYN, with FUMI's extra strong products reaching up to 20mg per pouch compared to ZYN's maximum of around 12mg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are FUMI and ZYN available in the UK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Both FUMI and ZYN nicotine pouches are available in the UK through specialist online retailers like PouchLab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which tastes better: FUMI or ZYN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FUMI is known for bold, intense flavours like Fiery Mango and Dark Berry. ZYN offers a wider variety including coffee and citrus. Both have distinct flavour profiles - preference is personal."
+      }
+    }
+  ]
+}
+</script>
+{% endif %}

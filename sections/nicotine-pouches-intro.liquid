@@ -1,0 +1,183 @@
+{{ 'nicotine-pouches-intro.css' | asset_url | stylesheet_tag }}
+
+<section class="npi">
+  <div class="npi__inner">
+    <div class="npi__head">
+      <h2 class="npi__title">Nicotine Pouches UK: Brands, Strengths, Flavours and Fast Delivery</h2>
+      <p class="npi__sub">Shop the full Pouch Lab range, from everyday light pouches to stronger, flavour-led and extra-strong options. Browse leading brands and styles in one place.</p>
+    </div>
+
+    <div class="npi__brands">
+      <span class="npi__brand">VELO</span>
+      <span class="npi__brand">KILLA</span>
+      <span class="npi__brand">Nordic Spirit</span>
+      <span class="npi__brand">PABLO</span>
+      <span class="npi__brand">XQS</span>
+      <span class="npi__brand">FUMI</span>
+      <span class="npi__brand">CLEW</span>
+      <span class="npi__brand">CUBA</span>
+      <span class="npi__brand">NICPIX</span>
+    </div>
+
+    <div class="npi__props">
+      <div class="npi__prop">
+        <div class="npi__prop-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="m16 8 4 2v7a1 1 0 0 1-1 1h-3"/><path d="M20 14v-4a1 1 0 0 0-1-1h-2"/></svg>
+        </div>
+        <div>
+          <h3>Free UK Delivery £30+</h3>
+          <p>Free delivery on orders over £30 with fast UK shipping.</p>
+        </div>
+      </div>
+      <div class="npi__prop">
+        <div class="npi__prop-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <h3>Same-Day Dispatch</h3>
+          <p>Order before 2pm and your parcel ships the same day.</p>
+        </div>
+      </div>
+      <div class="npi__prop">
+        <div class="npi__prop-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3>100% Authentic Products</h3>
+          <p>Only genuine products from licensed manufacturers. No fakes, ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.npi {
+  background: #FAFAF8;
+  padding: 56px 24px;
+}
+
+.npi__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.npi__head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 32px;
+}
+
+.npi__title {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-weight: 800;
+  font-size: clamp(1.4rem, 2.5vw, 1.875rem);
+  letter-spacing: -0.025em;
+  color: #1C1917;
+  margin: 0 0 14px;
+  line-height: 1.15;
+}
+
+.npi__sub {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #6B635A;
+  margin: 0;
+}
+
+.npi__brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.npi__brand {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #7C6E5A;
+  background: #FFFFFF;
+  border: 1px solid #E7E5E4;
+  border-radius: 8px;
+  padding: 6px 14px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: default;
+}
+
+.npi__brand:hover {
+  background: #1C1917;
+  color: #FAFAF8;
+  border-color: #1C1917;
+}
+
+.npi__props {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.npi__prop {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #FFFFFF;
+  border: 1px solid #E7E5E4;
+  border-radius: 10px;
+  padding: 18px 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.npi__prop:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(28, 25, 23, 0.06);
+}
+
+.npi__prop-icon {
+  width: 36px;
+  height: 36px;
+  background: #F0EEE9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7C6E5A;
+  flex-shrink: 0;
+}
+
+.npi__prop h3 {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1C1917;
+  margin: 0 0 4px;
+  letter-spacing: -0.005em;
+}
+
+.npi__prop p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #6B635A;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .npi__props {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .npi {
+    padding: 40px 16px;
+  }
+  .npi__brand {
+    font-size: 0.65rem;
+    padding: 5px 10px;
+  }
+}
+</style>

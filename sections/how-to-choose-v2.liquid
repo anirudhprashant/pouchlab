@@ -1,0 +1,328 @@
+{{ 'how-to-choose-v2.css' | asset_url | stylesheet_tag }}
+
+<section class="htc">
+  <div class="htc__inner">
+    <div class="htc__layout">
+      <div class="htc__left">
+        <p class="htc__eyebrow">Finding Your Perfect Fit</p>
+        <h2 class="htc__title">How to Choose Nicotine Pouch Strength</h2>
+        <p class="htc__body">Not sure where to start? You are not alone. The right nicotine pouch strength depends on your current nicotine tolerance and what kind of experience you are looking for.</p>
+        <p class="htc__body">If you are new to nicotine pouches, start light. You can always move up if it feels too mild. If you already have a nicotine habit from smoking or vaping, medium or strong might be a better starting point.</p>
+        <div class="htc__tip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <p>Rule of thumb: when in doubt, go lighter. You can build up, but you cannot go back down mid-pouch.</p>
+        </div>
+        <div class="htc__actions">
+          <a href="/collections/light-strength" class="htc__btn-primary">
+            Start with Light
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="/collections/medium-strength" class="htc__btn-secondary">
+            Shop Medium
+          </a>
+        </div>
+      </div>
+
+      <div class="htc__right">
+        <div class="htc__meter">
+          <div class="htc__meter-title">Strength Scale</div>
+          <div class="htc__meter-track">
+            <div class="htc__meter-fill"></div>
+          </div>
+          <div class="htc__meter-steps">
+            <div class="htc__step">
+              <div class="htc__step-dot light"></div>
+              <span>Light</span>
+              <small>2-5 mg</small>
+            </div>
+            <div class="htc__step">
+              <div class="htc__step-dot medium"></div>
+              <span>Medium</span>
+              <small>6-10 mg</small>
+            </div>
+            <div class="htc__step">
+              <div class="htc__step-dot strong"></div>
+              <span>Strong</span>
+              <small>11-15 mg</small>
+            </div>
+            <div class="htc__step">
+              <div class="htc__step-dot xstrong"></div>
+              <span>Extra Strong</span>
+              <small>16+ mg</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="htc__cards">
+          <div class="htc__rec htc__rec--new">
+            <div class="htc__rec-badge">New to pouches?</div>
+            <p>Start with <strong>Light or Medium</strong> strength. Smooth, manageable, no harsh hit.</p>
+          </div>
+          <div class="htc__rec htc__rec--exp">
+            <div class="htc__rec-badge">Experienced user?</div>
+            <p>Go for <strong>Strong or Extra Strong</strong>. Full nicotine hit, bold flavour presence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.htc {
+  background: #1C1917;
+  padding: 80px 24px;
+}
+
+.htc__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.htc__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.htc__eyebrow {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C9A876;
+  margin: 0 0 14px;
+}
+
+.htc__title {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 2.5vw, 2.25rem);
+  letter-spacing: -0.03em;
+  color: #FAFAF8;
+  margin: 0 0 20px;
+  line-height: 1.15;
+}
+
+.htc__body {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #A09080;
+  margin: 0 0 14px;
+}
+
+.htc__body:last-of-type {
+  margin-bottom: 20px;
+}
+
+.htc__tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #2A2520;
+  border: 1px solid #3D3530;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 28px;
+}
+
+.htc__tip svg {
+  flex-shrink: 0;
+  color: #C9A876;
+  margin-top: 2px;
+}
+
+.htc__tip p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #C0B5A5;
+  margin: 0;
+}
+
+.htc__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.htc__btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #C9A876;
+  color: #1C1917;
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.htc__btn-primary:hover {
+  background: #D4B888;
+  transform: translateY(-1px);
+}
+
+.htc__btn-primary svg {
+  transition: transform 0.2s ease;
+}
+
+.htc__btn-primary:hover svg {
+  transform: translateX(3px);
+}
+
+.htc__btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #C0B5A5;
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  border: 1.5px solid #3D3530;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.htc__btn-secondary:hover {
+  border-color: #5D5548;
+  color: #E0D5C5;
+}
+
+/* Meter */
+.htc__meter {
+  background: #252220;
+  border: 1px solid #3D3530;
+  border-radius: 16px;
+  padding: 28px 24px;
+  margin-bottom: 20px;
+}
+
+.htc__meter-title {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7C6E5A;
+  margin-bottom: 14px;
+}
+
+.htc__meter-track {
+  height: 6px;
+  background: #3D3530;
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.htc__meter-fill {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #8FAF7C 0%, #C9A876 50%, #C4785A 80%, #8B3A3A 100%);
+  border-radius: 99px;
+}
+
+.htc__meter-steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.htc__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.htc__step-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.htc__step-dot.light { background: #8FAF7C; }
+.htc__step-dot.medium { background: #C9A876; }
+.htc__step-dot.strong { background: #C4785A; }
+.htc__step-dot.xstrong { background: #8B3A3A; }
+
+.htc__step span {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #C0B5A5;
+  white-space: nowrap;
+}
+
+.htc__step small {
+  font-size: 0.65rem;
+  color: #7C6E5A;
+  white-space: nowrap;
+}
+
+/* Recommendation Cards */
+.htc__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.htc__rec {
+  background: #252220;
+  border: 1px solid #3D3530;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.htc__rec-badge {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #C9A876;
+  margin-bottom: 8px;
+}
+
+.htc__rec--exp .htc__rec-badge {
+  color: #C4785A;
+}
+
+.htc__rec p {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #A09080;
+  margin: 0;
+}
+
+.htc__rec strong {
+  color: #E0D5C5;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .htc__layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 540px) {
+  .htc {
+    padding: 56px 16px;
+  }
+  .htc__cards {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

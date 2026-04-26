@@ -1,0 +1,428 @@
+{% doc %}
+  @prompt
+    Create a collection hero banner section that dynamically displays collection metafields. The section should:
+    
+    1. Display hero.banner_image as background (or hero.banner_video if available)
+    2. Show hero.tagline as the main heading
+    3. Display a CTA button using hero.cta_text (first item from list) and hero.cta_url
+    4. Use seo.h1_override as the H1 if it exists, otherwise use collection.title
+    5. Only display if hero metafields exist (conditional rendering)
+    6. Be fully responsive and SEO-optimized
+    7. Support both image and video backgrounds with proper fallbacks
+    
+    The metafield structure:
+    - hero.banner_image (File - Image)
+    - hero.banner_video (File - Video)  
+    - hero.tagline (Single line text)
+    - hero.cta_text (List of single line text)
+    - hero.cta_url (URL)
+    - seo.h1_override (Single line text)
+    
+    Make it visually appealing with overlay, centered text, and modern styling.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% liquid
+  assign has_hero_metafields = false
+  if collection.metafields.hero.banner_image != blank or collection.metafields.hero.banner_video != blank or collection.metafields.hero.tagline != blank
+    assign has_hero_metafields = true
+  endif
+
+  assign h1_text = collection.title
+  if collection.metafields.seo.h1_override != blank
+    assign h1_text = collection.metafields.seo.h1_override
+  endif
+
+  assign cta_text = ''
+  assign cta_url = ''
+  if collection.metafields.hero.cta_text.value.size > 0
+    assign cta_text = collection.metafields.hero.cta_text.value[0]
+  endif
+  if collection.metafields.hero.cta_url != blank
+    assign cta_url = collection.metafields.hero.cta_url
+  endif
+%}
+
+{% if has_hero_metafields %}
+  {% style %}
+    .ai-collection-hero-{{ ai_gen_id }} {
+      position: relative;
+      width: 100%;
+      min-height: {{ block.settings.min_height_desktop }}px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .ai-collection-hero-media-{{ ai_gen_id }} {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .ai-collection-hero-media-{{ ai_gen_id }} img,
+    .ai-collection-hero-media-{{ ai_gen_id }} video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ai-collection-hero-overlay-{{ ai_gen_id }} {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: {{ block.settings.overlay_color }};
+      opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+      z-index: 2;
+    }
+
+    .ai-collection-hero-content-{{ ai_gen_id }} {
+      position: relative;
+      z-index: 3;
+      text-align: {{ block.settings.text_alignment }};
+      max-width: {{ block.settings.content_max_width }}px;
+      padding: 40px 20px;
+      width: 100%;
+    }
+
+    .ai-collection-hero-h1-{{ ai_gen_id }} {
+      color: {{ block.settings.heading_color }};
+      font-size: {{ block.settings.heading_size_desktop }}px;
+      margin: 0 0 16px;
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    .ai-collection-hero-tagline-{{ ai_gen_id }} {
+      color: {{ block.settings.tagline_color }};
+      font-size: {{ block.settings.tagline_size_desktop }}px;
+      margin: 0 0 32px;
+      line-height: 1.5;
+    }
+
+    .ai-collection-hero-cta-{{ ai_gen_id }} {
+      display: inline-block;
+      padding: 16px 32px;
+      background-color: {{ block.settings.cta_bg_color }};
+      color: {{ block.settings.cta_text_color }};
+      text-decoration: none;
+      border-radius: {{ block.settings.cta_border_radius }}px;
+      font-size: {{ block.settings.cta_font_size }}px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: {{ block.settings.cta_border_width }}px solid {{ block.settings.cta_border_color }};
+    }
+
+    .ai-collection-hero-cta-{{ ai_gen_id }}:hover {
+      background-color: {{ block.settings.cta_hover_bg_color }};
+      color: {{ block.settings.cta_hover_text_color }};
+      border-color: {{ block.settings.cta_hover_border_color }};
+      transform: translateY(-2px);
+    }
+
+    @media screen and (max-width: 749px) {
+      .ai-collection-hero-{{ ai_gen_id }} {
+        min-height: {{ block.settings.min_height_mobile }}px;
+      }
+
+      .ai-collection-hero-h1-{{ ai_gen_id }} {
+        font-size: {{ block.settings.heading_size_mobile }}px;
+      }
+
+      .ai-collection-hero-tagline-{{ ai_gen_id }} {
+        font-size: {{ block.settings.tagline_size_mobile }}px;
+      }
+
+      .ai-collection-hero-content-{{ ai_gen_id }} {
+        padding: 30px 16px;
+      }
+    }
+  {% endstyle %}
+
+  <div class="ai-collection-hero-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+    <div class="ai-collection-hero-media-{{ ai_gen_id }}">
+      {% if collection.metafields.hero.banner_video != blank %}
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="{{ collection.title }} hero video"
+        >
+          <source src="{{ collection.metafields.hero.banner_video | file_url }}" type="video/mp4">
+          {% if collection.metafields.hero.banner_image != blank %}
+            <img
+              src="{{ collection.metafields.hero.banner_image | image_url: width: 2000 }}"
+              alt="{{ collection.metafields.hero.banner_image.alt | default: collection.title | escape }}"
+              width="{{ collection.metafields.hero.banner_image.width }}"
+              height="{{ collection.metafields.hero.banner_image.height }}"
+              loading="eager"
+            >
+          {% endif %}
+        </video>
+      {% elsif collection.metafields.hero.banner_image != blank %}
+        <img
+          src="{{ collection.metafields.hero.banner_image | image_url: width: 2000 }}"
+          alt="{{ collection.metafields.hero.banner_image.alt | default: collection.title | escape }}"
+          width="{{ collection.metafields.hero.banner_image.width }}"
+          height="{{ collection.metafields.hero.banner_image.height }}"
+          loading="eager"
+          fetchpriority="high"
+        >
+      {% endif %}
+    </div>
+
+    <div class="ai-collection-hero-overlay-{{ ai_gen_id }}"></div>
+
+    <div class="ai-collection-hero-content-{{ ai_gen_id }}">
+      <h1 class="ai-collection-hero-h1-{{ ai_gen_id }}">{{ h1_text }}</h1>
+
+      {% if collection.metafields.hero.tagline != blank %}
+        <p class="ai-collection-hero-tagline-{{ ai_gen_id }}">
+          {{ collection.metafields.hero.tagline }}
+        </p>
+      {% endif %}
+
+      {% if cta_text != blank and cta_url != blank %}
+        <a href="{{ cta_url }}" class="ai-collection-hero-cta-{{ ai_gen_id }}">
+          {{ cta_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Collection hero banner",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "min_height_desktop",
+      "label": "Desktop minimum height",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "min_height_mobile",
+      "label": "Mobile minimum height",
+      "min": 200,
+      "max": 600,
+      "step": 50,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content maximum width",
+      "min": 400,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "default": 800
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Desktop size",
+      "min": 24,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Mobile size",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Tagline"
+    },
+    {
+      "type": "color",
+      "id": "tagline_color",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "tagline_size_desktop",
+      "label": "Desktop size",
+      "min": 12,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "tagline_size_mobile",
+      "label": "Mobile size",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Call to action button"
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_color",
+      "label": "Background",
+      "default": "#c3cca6"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "cta_border_color",
+      "label": "Border",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "cta_border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "cta_hover_bg_color",
+      "label": "Hover background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "cta_hover_text_color",
+      "label": "Hover text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cta_hover_border_color",
+      "label": "Hover border",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "cta_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "cta_font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection hero banner"
+    }
+  ]
+}
+{% endschema %}

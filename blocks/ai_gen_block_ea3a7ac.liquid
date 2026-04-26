@@ -1,0 +1,304 @@
+{% doc %}
+  @prompt
+    Create a USPs (Unique Selling Points) grid section for collections that displays the usps.list metafield. The section should:
+    
+    1. Display items from usps.list (List of single line text metafield) as a responsive grid
+    2. Show 2 columns on mobile, 3 columns on tablet, 6 columns on desktop
+    3. Each USP should have an icon (checkmark or star) and the text
+    4. Only display if usps.list metafield has content
+    5. Use modern card-style design with subtle shadows
+    6. Be fully responsive and visually appealing
+    7. Include proper spacing and typography
+    
+    The metafield: usps.list (List of single line text) - contains items like "100% Tobacco-Free", "Premium Quality", etc.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% if collection.metafields.custom.usps_list.value != blank %}
+  {% style %}
+    .ai-usps-grid-{{ ai_gen_id }} {
+      display: block;
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    .ai-usps-grid__container-{{ ai_gen_id }} {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .ai-usps-grid__list-{{ ai_gen_id }} {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: {{ block.settings.gap_mobile }}px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .ai-usps-grid__item-{{ ai_gen_id }} {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: {{ block.settings.card_padding }}px;
+      background-color: {{ block.settings.card_background }};
+      border-radius: {{ block.settings.border_radius }}px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, {{ block.settings.shadow_opacity | divided_by: 100.0 }});
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .ai-usps-grid__item-{{ ai_gen_id }}:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, {{ block.settings.shadow_opacity | divided_by: 100.0 | times: 1.5 }});
+    }
+
+    .ai-usps-grid__icon-{{ ai_gen_id }} {
+      flex-shrink: 0;
+      width: {{ block.settings.icon_size }}px;
+      height: {{ block.settings.icon_size }}px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: {{ block.settings.icon_background }};
+      border-radius: 50%;
+    }
+
+    .ai-usps-grid__icon-{{ ai_gen_id }} svg {
+      width: calc({{ block.settings.icon_size }}px * 0.6);
+      height: calc({{ block.settings.icon_size }}px * 0.6);
+      stroke: {{ block.settings.icon_color }};
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .ai-usps-grid__text-{{ ai_gen_id }} {
+      flex: 1;
+      font-size: {{ block.settings.text_size }}px;
+      line-height: 1.4;
+      color: {{ block.settings.text_color }};
+      font-weight: {{ block.settings.text_weight }};
+    }
+
+    @media screen and (min-width: 750px) {
+      .ai-usps-grid-{{ ai_gen_id }} {
+        padding: 60px 40px;
+      }
+
+      .ai-usps-grid__list-{{ ai_gen_id }} {
+        grid-template-columns: repeat(3, 1fr);
+        gap: {{ block.settings.gap_tablet }}px;
+      }
+    }
+
+    @media screen and (min-width: 990px) {
+      .ai-usps-grid__list-{{ ai_gen_id }} {
+        grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+        gap: {{ block.settings.gap_desktop }}px;
+      }
+    }
+  {% endstyle %}
+
+  <div class="ai-usps-grid-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+    <div class="ai-usps-grid__container-{{ ai_gen_id }}">
+      <ul class="ai-usps-grid__list-{{ ai_gen_id }}">
+        {% for usp in collection.metafields.custom.usps_list.value %}
+          <li class="ai-usps-grid__item-{{ ai_gen_id }}">
+            <div class="ai-usps-grid__icon-{{ ai_gen_id }}">
+              {% if block.settings.icon_type == 'checkmark' %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              {% endif %}
+            </div>
+            <span class="ai-usps-grid__text-{{ ai_gen_id }}">{{ usp }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Collection USPs grid",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Desktop columns",
+      "min": 3,
+      "max": 6,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Gap on mobile",
+      "min": 8,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "gap_tablet",
+      "label": "Gap on tablet",
+      "min": 12,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "gap_desktop",
+      "label": "Gap on desktop",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Padding",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Shadow opacity",
+      "min": 0,
+      "max": 30,
+      "step": 5,
+      "unit": "%",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Icon"
+    },
+    {
+      "type": "select",
+      "id": "icon_type",
+      "label": "Icon type",
+      "options": [
+        {
+          "value": "checkmark",
+          "label": "Checkmark"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        }
+      ],
+      "default": "checkmark"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 24,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "icon_background",
+      "label": "Background",
+      "default": "#c3cca6"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semibold"
+        }
+      ],
+      "default": "500"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection USPs grid"
+    }
+  ]
+}
+{% endschema %}

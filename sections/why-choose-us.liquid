@@ -1,0 +1,307 @@
+{% comment %}
+  Why Choose Us - Built with native theme blocks for full editor support
+  Alternating color: Use scheme-1 (white) or scheme-mono-pure (light gray) or scheme-mono-charcoal (dark)
+{% endcomment %}
+
+<section class="why-choose-section color-{{ section.settings.color_scheme }}">
+  <div class="section-{{ section.settings.section_width }}">
+    {% if section.settings.heading != blank %}
+      <div class="section-header">
+        <h2 class="section-title {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.subheading != blank %}
+          <p class="section-subtitle">{{ section.settings.subheading }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="value-props-grid" style="--columns: {{ section.settings.columns }};">
+      {% for block in section.blocks %}
+        <div class="value-prop {{ block.settings.alignment }}" {{ block.shopify_attributes }}>
+          {% if block.settings.icon != 'none' %}
+            <div class="value-prop-icon">
+              {% case block.settings.icon %}
+                {% when 'truck' %}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                {% when 'clock' %}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                {% when 'star' %}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                {% when 'shield' %}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                {% when 'help' %}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              {% endcase %}
+            </div>
+          {% endif %}
+          
+          <h3 class="value-prop-title">{{ block.settings.title }}</h3>
+          <p class="value-prop-desc">{{ block.settings.description }}</p>
+          
+          {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+            <a href="{{ block.settings.button_link }}" class="value-prop-link">{{ block.settings.button_text }} →</a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+.why-choose-section {
+  width: 100%;
+  position: relative;
+  background: rgb(var(--color-background));
+  padding-block-start: var(--section-padding-top, 64px);
+  padding-block-end: var(--section-padding-bottom, 64px);
+}
+
+.why-choose-section .section-page-width,
+.why-choose-section .section-full-width {
+  max-width: var(--page-width, 1400px);
+  margin: 0 auto;
+  padding-inline: 24px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 640px) {
+  .why-choose-section .section-page-width,
+  .why-choose-section .section-full-width {
+    padding-inline: 16px;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  color: var(--color-foreground-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.value-props-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 4), 1fr);
+  gap: 32px;
+}
+
+@media screen and (max-width: 990px) {
+  .value-props-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.value-prop {
+  text-align: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 640px) {
+  .value-props-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 0 16px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .value-props-grid::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .value-prop {
+    flex: 0 0 65vw;
+    max-width: 280px;
+    scroll-snap-align: start;
+  }
+}
+.value-prop-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  color: var(--color-foreground);
+  opacity: 0.7;
+}
+
+.value-prop-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.value-prop-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.value-prop-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-foreground-muted);
+  margin: 0 0 12px;
+}
+
+.value-prop-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.value-prop-link:hover {
+  text-decoration: underline;
+}
+
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Why Choose Us",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Choose Pouch Lab?"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "The UK's trusted source for premium nicotine pouches."
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {"value": "h2", "label": "Large"},
+        {"value": "h3", "label": "Medium"},
+        {"value": "h4", "label": "Small"}
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "label": "Columns",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        {"value": "page-width", "label": "Page width"},
+        {"value": "full-width", "label": "Full width"}
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 64
+    }
+  ],
+  "blocks": [
+    {
+      "type": "value_prop",
+      "name": "Value Proposition",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {"value": "none", "label": "None"},
+            {"value": "truck", "label": "Truck (Delivery)"},
+            {"value": "clock", "label": "Clock (Speed)"},
+            {"value": "star", "label": "Star (Reviews)"},
+            {"value": "shield", "label": "Shield (Trust)"},
+            {"value": "help", "label": "Help (Support)"}
+          ],
+          "default": "shield"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Value Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Describe your value proposition here."
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Link text (optional)"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why Choose Us",
+      "settings": {
+        "color_scheme": "scheme-1"
+      },
+      "blocks": [
+        {"type": "value_prop", "settings": {"icon": "truck", "title": "Free UK Delivery", "description": "Free delivery on orders over £30. Same-day dispatch before 2pm."}},
+        {"type": "value_prop", "settings": {"icon": "clock", "title": "Same-Day Dispatch", "description": "Order before 2pm and your package ships the same day."}},
+        {"type": "value_prop", "settings": {"icon": "star", "title": "10,000+ Happy Customers", "description": "Join thousands of satisfied UK customers who trust us."}},
+        {"type": "value_prop", "settings": {"icon": "shield", "title": "100% Authentic", "description": "Only genuine products from licensed manufacturers."}}
+      ]
+    }
+  ]
+}
+{% endschema %}

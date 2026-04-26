@@ -1,0 +1,355 @@
+{{ 'strength-guide-v2.css' | asset_url | stylesheet_tag }}
+
+<section class="sgv2">
+  <div class="sgv2__inner">
+    <div class="sgv2__header">
+      <p class="sgv2__eyebrow">Nicotine Pouch Strength Guide</p>
+      <h2 class="sgv2__title">Light, Medium, Strong and Extra Strong</h2>
+    </div>
+
+    <div class="sgv2__scale">
+      <div class="sgv2__scale-track">
+        <div class="sgv2__scale-fill"></div>
+      </div>
+      <div class="sgv2__scale-labels">
+        <span>Light</span>
+        <span>Medium</span>
+        <span>Strong</span>
+        <span>Extra Strong</span>
+      </div>
+    </div>
+
+    <div class="sgv2__grid">
+      <div class="sgv2__card" data-strength="light">
+        <div class="sgv2__card-top">
+          <div class="sgv2__strength-dot light"></div>
+          <span class="sgv2__strength-label">Light</span>
+          <span class="sgv2__card-mg">2-5 mg</span>
+        </div>
+        <div class="sgv2__card-bar">
+          <div class="sgv2__bar-fill" style="width: 25%"></div>
+        </div>
+        <div class="sgv2__card-for">
+          <p>Best for beginners or casual users. Smooth, manageable nicotine experience.</p>
+        </div>
+        <div class="sgv2__card-footer">
+          <div class="sgv2__card-brands">
+            <span class="sgv2__brand-tag">VELO Light</span>
+            <span class="sgv2__brand-tag">Nordic Spirit</span>
+          </div>
+          <a href="/collections/light-strength" class="sgv2__card-cta">
+            Shop
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sgv2__card" data-strength="medium">
+        <div class="sgv2__card-top">
+          <div class="sgv2__strength-dot medium"></div>
+          <span class="sgv2__strength-label">Medium</span>
+          <span class="sgv2__card-mg">6-10 mg</span>
+        </div>
+        <div class="sgv2__card-bar">
+          <div class="sgv2__bar-fill" style="width: 50%"></div>
+        </div>
+        <div class="sgv2__card-for">
+          <p>Ideal if you already have nicotine tolerance. Balanced hit with good flavour.</p>
+        </div>
+        <div class="sgv2__card-footer">
+          <div class="sgv2__card-brands">
+            <span class="sgv2__brand-tag">VELO Regular</span>
+            <span class="sgv2__brand-tag">PABLO Ice</span>
+          </div>
+          <a href="/collections/medium-strength" class="sgv2__card-cta">
+            Shop
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sgv2__card" data-strength="strong">
+        <div class="sgv2__card-top">
+          <div class="sgv2__strength-dot strong"></div>
+          <span class="sgv2__strength-label">Strong</span>
+          <span class="sgv2__card-mg">11-15 mg</span>
+        </div>
+        <div class="sgv2__card-bar">
+          <div class="sgv2__bar-fill" style="width: 75%"></div>
+        </div>
+        <div class="sgv2__card-for">
+          <p>For regular users. Solid, satisfying nicotine delivery with bold flavour.</p>
+        </div>
+        <div class="sgv2__card-footer">
+          <div class="sgv2__card-brands">
+            <span class="sgv2__brand-tag">ZYN Cool</span>
+            <span class="sgv2__brand-tag">VELO Strong</span>
+          </div>
+          <a href="/collections/strong-strength" class="sgv2__card-cta">
+            Shop
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sgv2__card" data-strength="extra-strong">
+        <div class="sgv2__card-top">
+          <div class="sgv2__strength-dot extra-strong"></div>
+          <span class="sgv2__strength-label">Extra Strong</span>
+          <span class="sgv2__card-mg">16+ mg</span>
+        </div>
+        <div class="sgv2__card-bar">
+          <div class="sgv2__bar-fill" style="width: 100%"></div>
+        </div>
+        <div class="sgv2__card-for">
+          <p>Maximum nicotine hit. For experienced users who need the strongest release.</p>
+        </div>
+        <div class="sgv2__card-footer">
+          <div class="sgv2__card-brands">
+            <span class="sgv2__brand-tag">ZYN Extreme</span>
+            <span class="sgv2__brand-tag">VELO X-Strong</span>
+          </div>
+          <a href="/collections/extra-strong" class="sgv2__card-cta">
+            Shop
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.sgv2 {
+  background: #FAFAF8;
+  padding: 56px 24px;
+}
+
+.sgv2__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sgv2__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sgv2__eyebrow {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9A8A76;
+  margin: 0 0 8px;
+}
+
+.sgv2__title {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-weight: 800;
+  font-size: clamp(1.4rem, 2.5vw, 1.875rem);
+  letter-spacing: -0.025em;
+  color: #1C1917;
+  margin: 0;
+  line-height: 1.15;
+}
+
+/* Strength Scale */
+.sgv2__scale {
+  max-width: 700px;
+  margin: 0 auto 36px;
+}
+
+.sgv2__scale-track {
+  height: 3px;
+  background: #E7E5E4;
+  border-radius: 99px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.sgv2__scale-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #9BB586 0%, #C9A876 45%, #C07058 75%, #7A3030 100%);
+  border-radius: 99px;
+}
+
+.sgv2__scale-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8A8078;
+}
+
+/* Cards Grid */
+.sgv2__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.sgv2__card {
+  background: #FFFFFF;
+  border: 1px solid #E7E5E4;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sgv2__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(28, 25, 23, 0.08);
+}
+
+.sgv2__card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sgv2__strength-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sgv2__strength-dot.light { background: #9BB586; }
+.sgv2__strength-dot.medium { background: #C9A876; }
+.sgv2__strength-dot.strong { background: #C07058; }
+.sgv2__strength-dot.extra-strong { background: #7A3030; }
+
+.sgv2__strength-label {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1C1917;
+  flex: 1;
+}
+
+.sgv2__card-mg {
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #A09080;
+  letter-spacing: 0.04em;
+}
+
+.sgv2__card-bar {
+  height: 3px;
+  background: #F0EEEC;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.sgv2__bar-fill {
+  height: 100%;
+  border-radius: 99px;
+}
+
+.sgv2__card[data-strength="light"] .sgv2__bar-fill { background: #9BB586; }
+.sgv2__card[data-strength="medium"] .sgv2__bar-fill { background: #C9A876; }
+.sgv2__card[data-strength="strong"] .sgv2__bar-fill { background: #C07058; }
+.sgv2__card[data-strength="extra-strong"] .sgv2__bar-fill { background: #7A3030; }
+
+.sgv2__card-for {
+  flex: 1;
+}
+
+.sgv2__card-for p {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: #6B635A;
+  margin: 0;
+}
+
+.sgv2__card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.sgv2__card-brands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.sgv2__brand-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #8A7A68;
+  background: #F5F3EF;
+  border: 1px solid #E8E4DE;
+  border-radius: 5px;
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+
+.sgv2__card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #1C1917;
+  color: #FFFFFF;
+  font-family: var(--font-heading-family, 'Manrope', sans-serif);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.sgv2__card-cta:hover {
+  background: #3D3530;
+}
+
+.sgv2__card-cta svg {
+  transition: transform 0.2s ease;
+}
+
+.sgv2__card-cta:hover svg {
+  transform: translateX(2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sgv2__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .sgv2 {
+    padding: 40px 16px;
+  }
+  .sgv2__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .sgv2__card-brands {
+    display: none;
+  }
+  .sgv2__scale-labels {
+    font-size: 0.55rem;
+  }
+}
+</style>

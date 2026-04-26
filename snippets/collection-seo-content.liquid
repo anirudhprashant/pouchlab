@@ -1,0 +1,141 @@
+{% comment %}
+  Collection SEO Enhancement Snippet
+  Adds structured content to collection pages for better SEO
+  Include in collection template
+{% endcomment %}
+
+{% if collection.description != blank or request.page_type == 'collection' %}
+  <div class="collection-seo-content page-width">
+    {% if collection.description != blank %}
+      <div class="collection-description rte">
+        {{ collection.description }}
+      </div>
+    {% endif %}
+
+    {% comment %} Auto-generated SEO content for collections without descriptions {% endcomment %}
+    {% if collection.description == blank %}
+      {% case collection.handle %}
+        {% when 'zyn' %}
+          <div class="collection-description rte">
+            <h2>ZYN Nicotine Pouches UK</h2>
+            <p>Discover ZYN, America's #1 nicotine pouch brand now available in the UK. ZYN offers a tobacco-free, smoke-free way to enjoy nicotine with a range of refreshing flavours and strengths from 3mg to 6mg. Perfect for beginners and those seeking a mild, satisfying experience. Shop the complete ZYN collection with fast UK delivery and same-day dispatch.</p>
+            <p><strong>Popular ZYN flavours:</strong> Cool Mint, Spearmint, Citrus, Coffee, and more. All ZYN pouches are made with pharmaceutical-grade nicotine and food-grade ingredients for a clean, consistent experience.</p>
+          </div>
+
+        {% when 'velo' %}
+          <div class="collection-description rte">
+            <h2>VELO Nicotine Pouches UK</h2>
+            <p>Experience VELO, the UK's favourite nicotine pouch brand. With strengths ranging from 4mg to 17mg and over 15 unique flavours, VELO offers something for everyone. From refreshing Ice Cool to tropical Tropical Breeze, discover why millions choose VELO for their nicotine satisfaction. Free UK delivery on orders over £20.</p>
+            <p><strong>Why choose VELO?</strong> Industry-leading flavour innovation, slim discreet pouches, and consistent quality make VELO the go-to choice for both newcomers and experienced users.</p>
+          </div>
+
+        {% when 'nordic-spirit' %}
+          <div class="collection-description rte">
+            <h2>Nordic Spirit Nicotine Pouches UK</h2>
+            <p>Nordic Spirit brings Scandinavian quality to the UK with natural, authentic flavour profiles. Featuring unique options like Elderflower and Bergamot Wildberry, Nordic Spirit appeals to discerning users who prioritize sophisticated taste over intensity. Available in 6mg to 9mg strengths.</p>
+            <p><strong>Natural flavours, premium quality.</strong> Made with meticulous attention to taste authenticity and comfort.</p>
+          </div>
+
+        {% when 'pablo' %}
+          <div class="collection-description rte">
+            <h2>PABLO Extra Strong Nicotine Pouches UK</h2>
+            <p>PABLO delivers maximum intensity for experienced users. With strengths from 30mg to 50mg per pouch, PABLO is not for beginners. These extra-strong pouches provide powerful, immediate nicotine satisfaction with bold, icy flavours. <strong>Warning: High nicotine content.</strong> For experienced users only.</p>
+            <p>Shop PABLO with fast UK delivery. Must be 18+ to purchase.</p>
+          </div>
+
+        {% when 'killa' %}
+          <div class="collection-description rte">
+            <h2>KILLA Strong Nicotine Pouches UK</h2>
+            <p>KILLA strikes the perfect balance between strength and flavour. With 12mg to 16mg nicotine per pouch, KILLA caters to regular users seeking robust satisfaction without entering extreme territory. Bold fruit combinations and excellent moisture balance make KILLA a customer favourite.</p>
+            <p><strong>Popular KILLA flavours:</strong> Cold Mint, Banana Ice, Watermelon, and Apple. Strong, flavourful, and consistently satisfying.</p>
+          </div>
+
+        {% when 'xqs' %}
+          <div class="collection-description rte">
+            <h2>XQS Nicotine Pouches UK</h2>
+            <p>XQS offers innovative flavours and quality nicotine delivery for the adventurous user. Explore unique taste experiences with XQS's carefully crafted pouches, available in various strengths to suit your preference.</p>
+          </div>
+
+        {% when 'light-strength' %}
+          <div class="collection-description rte">
+            <h2>Light Strength Nicotine Pouches (3-6mg) UK</h2>
+            <p>Light strength nicotine pouches (3-6mg) are perfect for beginners or those who prefer a milder experience. These pouches provide gentle nicotine satisfaction without overwhelming intensity. Ideal for first-time users transitioning from smoking or seeking a subtle daily option.</p>
+            <p><strong>Recommended for:</strong> Beginners, light smokers, or those sensitive to nicotine. Brands like ZYN specialize in this strength range.</p>
+          </div>
+
+        {% when 'medium-strength' %}
+          <div class="collection-description rte">
+            <h2>Medium Strength Nicotine Pouches (8-11mg) UK</h2>
+            <p>Medium strength nicotine pouches (8-11mg) offer balanced satisfaction for regular users. This range provides noticeable nicotine delivery while maintaining comfort and flavour quality. The most popular strength category among UK customers.</p>
+            <p><strong>Recommended for:</strong> Regular users seeking consistent daily satisfaction. Available across most major brands including VELO and Nordic Spirit.</p>
+          </div>
+
+        {% when 'strong' %}
+          <div class="collection-description rte">
+            <h2>Strong Nicotine Pouches (15-20mg) UK</h2>
+            <p>Strong nicotine pouches (15-20mg) deliver robust satisfaction for experienced users with developed nicotine tolerance. These pouches provide intense, long-lasting effects ideal for those who find lower strengths insufficient.</p>
+            <p><strong>Recommended for:</strong> Experienced users, heavy former smokers, or those seeking maximum satisfaction from standard strength options. Try KILLA for premium strong pouches.</p>
+          </div>
+
+        {% when 'extra-strong' %}
+          <div class="collection-description rte">
+            <h2>Extra Strong Nicotine Pouches (20mg+) UK</h2>
+            <p>Extra strong nicotine pouches (20mg+) provide maximum intensity for users with high nicotine tolerance. These powerful formulations deliver immediate, long-lasting satisfaction. <strong>Not recommended for beginners.</strong></p>
+            <p><strong>Recommended for:</strong> Highly experienced users only. Brands like PABLO and ICEBERG specialize in extra-strong formulations up to 50mg.</p>
+          </div>
+
+        {% when 'mint-menthol' %}
+          <div class="collection-description rte">
+            <h2>Mint & Menthol Nicotine Pouches UK</h2>
+            <p>Mint and menthol nicotine pouches are the UK's most popular flavour category. From refreshing spearmint to intense icy menthol, these pouches deliver a cool, invigorating experience that cleanses the palate while satisfying nicotine cravings.</p>
+            <p><strong>Best for:</strong> All users. Mint flavours mask nicotine bitterness effectively and provide long-lasting freshness. Available across all strength levels.</p>
+          </div>
+
+        {% when 'fruit' %}
+          <div class="collection-description rte">
+            <h2>Fruit Flavoured Nicotine Pouches UK</h2>
+            <p>Fruit nicotine pouches offer sweet, natural alternatives to traditional flavours. From classic apple and citrus to exotic tropical blends, fruit flavours provide enjoyable variety for users seeking something different from mint.</p>
+          </div>
+
+        {% when 'berry' %}
+          <div class="collection-description rte">
+            <h2>Berry Nicotine Pouches UK</h2>
+            <p>Berry nicotine pouches combine sweet and tart profiles for a satisfying experience. Strawberry, raspberry, blueberry, and mixed berry options provide fruity alternatives that appeal to users seeking sweeter flavour profiles.</p>
+          </div>
+
+        {% else %}
+          {% comment %} Generic SEO content for other collections {% endcomment %}
+          {% if collection.products_count > 0 %}
+            <div class="collection-description rte">
+              <h2>{{ collection.title | escape }} Nicotine Pouches UK</h2>
+              <p>Shop {{ collection.title | escape }} nicotine pouches at Pouch Lab, the UK's premium nicotine pouch destination. We offer authentic products from licensed manufacturers with free UK delivery on orders over £20 and same-day dispatch. Browse our {{ collection.products_count }} {{ collection.title | escape }} products and find your perfect strength and flavour.</p>
+            </div>
+          {% endif %}
+      {% endcase %}
+    {% endif %}
+  </div>
+
+  <style>
+    .collection-seo-content {
+      margin-bottom: 32px;
+    }
+
+    .collection-description {
+      max-width: 800px;
+    }
+
+    .collection-description h2 {
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+    }
+
+    .collection-description p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .collection-description strong {
+      font-weight: 600;
+    }
+  </style>
+{% endif %}

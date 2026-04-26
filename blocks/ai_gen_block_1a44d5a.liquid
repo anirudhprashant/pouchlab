@@ -1,0 +1,485 @@
+{% doc %}
+  @prompt
+    Create a "How to Use Nicotine Pouches" section with three steps displayed horizontally. Each step should have a numbered badge (1, 2, 3), an image placeholder, a title (Pop, Tingle, Enjoy), and descriptive text below. Include a section heading "How to Use" at the top. The section must have a color scheme selector setting that allows choosing from all available theme color schemes to control the background color and text colors. Make it responsive so steps stack vertically on mobile. Use clean, minimal styling that matches a premium brand aesthetic with proper spacing and typography.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-how-to-use-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: {{ block.settings.section_padding_top }}px 20px {{ block.settings.section_padding_bottom }}px;
+  }
+
+  .ai-how-to-use-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-how-to-use-heading-{{ ai_gen_id }} {
+    text-align: {{ block.settings.heading_alignment }};
+    margin: 0 0 {{ block.settings.heading_spacing }}px;
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .ai-how-to-use-steps-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.step_gap }}px;
+    margin: 0;
+  }
+
+  .ai-how-to-use-step-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ai-how-to-use-badge-{{ ai_gen_id }} {
+    width: {{ block.settings.badge_size }}px;
+    height: {{ block.settings.badge_size }}px;
+    border-radius: 50%;
+    background-color: {{ block.settings.badge_background }};
+    color: {{ block.settings.badge_text_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: {{ block.settings.badge_font_size }}px;
+    font-weight: 700;
+    margin-bottom: {{ block.settings.badge_spacing }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-how-to-use-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    margin-bottom: {{ block.settings.image_spacing }}px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-how-to-use-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-how-to-use-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-how-to-use-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-how-to-use-step-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_title_size }}px;
+    font-weight: 600;
+    margin: 0 0 {{ block.settings.title_spacing }}px;
+    letter-spacing: -0.01em;
+  }
+
+  .ai-how-to-use-step-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_text_size }}px;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.85;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-how-to-use-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_top | times: 0.6 }}px 16px {{ block.settings.section_padding_bottom | times: 0.6 }}px;
+    }
+
+    .ai-how-to-use-steps-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.mobile_step_gap }}px;
+    }
+
+    .ai-how-to-use-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.7 }}px;
+      margin-bottom: {{ block.settings.heading_spacing | times: 0.7 }}px;
+    }
+
+    .ai-how-to-use-badge-{{ ai_gen_id }} {
+      width: {{ block.settings.badge_size | times: 0.8 }}px;
+      height: {{ block.settings.badge_size | times: 0.8 }}px;
+      font-size: {{ block.settings.badge_font_size | times: 0.8 }}px;
+    }
+
+    .ai-how-to-use-step-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.step_title_size | times: 0.85 }}px;
+    }
+
+    .ai-how-to-use-step-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.step_text_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<how-to-use-{{ ai_gen_id }}
+  class="ai-how-to-use-{{ ai_gen_id }} color-{{ block.settings.color_scheme }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-how-to-use-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-how-to-use-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ai-how-to-use-steps-{{ ai_gen_id }}">
+      {% for i in (1..3) %}
+        {% liquid
+          assign step_image_key = 'step_' | append: i | append: '_image'
+          assign step_title_key = 'step_' | append: i | append: '_title'
+          assign step_text_key = 'step_' | append: i | append: '_text'
+
+          assign step_image = block.settings[step_image_key]
+          assign step_title = block.settings[step_title_key]
+          assign step_text = block.settings[step_text_key]
+        %}
+
+        <div class="ai-how-to-use-step-{{ ai_gen_id }}">
+          <div class="ai-how-to-use-badge-{{ ai_gen_id }}">{{ i }}</div>
+
+          <div class="ai-how-to-use-image-wrapper-{{ ai_gen_id }}">
+            {% if step_image %}
+              <img
+                src="{{ step_image | image_url: width: 600 }}"
+                alt="{{ step_title | escape }}"
+                loading="lazy"
+                width="600"
+                height="600"
+                class="ai-how-to-use-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-how-to-use-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+
+          {% if step_title != blank %}
+            <h3 class="ai-how-to-use-step-title-{{ ai_gen_id }}">{{ step_title }}</h3>
+          {% endif %}
+
+          {% if step_text != blank %}
+            <p class="ai-how-to-use-step-text-{{ ai_gen_id }}">{{ step_text }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</how-to-use-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class HowToUse{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+
+    customElements.define('how-to-use-{{ ai_gen_id }}', HowToUse{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "How to use",
+  "tag": null,
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Section heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "How to Use"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 40
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Spacing below heading",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "step_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "step_1_title",
+      "label": "Title",
+      "default": "Pop"
+    },
+    {
+      "type": "textarea",
+      "id": "step_1_text",
+      "label": "Description",
+      "default": "Place the pouch under your upper lip"
+    },
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "step_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "step_2_title",
+      "label": "Title",
+      "default": "Tingle"
+    },
+    {
+      "type": "textarea",
+      "id": "step_2_text",
+      "label": "Description",
+      "default": "Feel the refreshing tingle as the flavour releases"
+    },
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "step_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "step_3_title",
+      "label": "Title",
+      "default": "Enjoy"
+    },
+    {
+      "type": "textarea",
+      "id": "step_3_text",
+      "label": "Description",
+      "default": "Enjoy for up to 30 minutes, then dispose responsibly"
+    },
+    {
+      "type": "header",
+      "content": "Badge style"
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "min": 40,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Badge size",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "badge_font_size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Badge number size",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Badge background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "badge_spacing",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Spacing below badge",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Image style"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Spacing below image",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Step content"
+    },
+    {
+      "type": "range",
+      "id": "step_title_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Spacing below title",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "step_text_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_max_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Container max width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "step_gap",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop gap between steps",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_step_gap",
+      "min": 24,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile gap between steps",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "How to use"
+    }
+  ]
+}
+{% endschema %}

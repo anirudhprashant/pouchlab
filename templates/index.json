@@ -1,0 +1,3013 @@
+{
+  "sections": {
+    "hero_iLBwPd": {
+      "type": "hero",
+      "blocks": {
+        "group_mATTUY": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_U86Qji": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-end",
+                "gap": 0,
+                "width": "custom",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_m9AcWC": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h1>The UK's Best Selection of Nicotine Pouches<\/h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "2.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "tight",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground-heading)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_promo_sub": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>VELO • KILLA • Nordic Spirit • ZYN • PABLO — All Authentic, All In Stock<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "custom",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground-heading)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_m9AcWC",
+                "text_promo_sub"
+              ]
+            }
+          },
+          "block_order": [
+            "group_U86Qji"
+          ]
+        }
+      },
+      "block_order": [
+        "group_mATTUY"
+      ],
+      "name": "t:names.hero",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify:\/\/shop_images\/unnamed_145088e2-ef15-4d8f-a54a-a9e033b9167e.jpg",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": true,
+        "media_type_1_mobile": "image",
+        "image_1_mobile": "shopify:\/\/shop_images\/unnamed_145088e2-ef15-4d8f-a54a-a9e033b9167e.jpg",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "large",
+        "section_height_custom": 65,
+        "color_scheme": "scheme-mono-charcoal",
+        "toggle_overlay": true,
+        "overlay_color": "#0000004f",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 27,
+        "padding-block-end": 25
+      }
+    },
+    "brand_trust_bar_x7ro7jn2cvbou": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"pl-cta-bar\">\n  <div class=\"pl-cta-inner\">\n    <div class=\"pl-cta-left\">\n      <span class=\"pl-cta-flame\">⚡<\/span>\n      <span class=\"pl-cta-label\">UK's #1 Specialist for Nicotine Pouches<\/span>\n    <\/div>\n    <div class=\"pl-cta-center\">\n      <a href=\"\/collections\/velo\">VELO<\/a><span>•<\/span>\n      <a href=\"\/collections\/zyn\">ZYN<\/a><span>•<\/span>\n      <a href=\"\/collections\/nordic-spirit\">Nordic Spirit<\/a><span>•<\/span>\n      <a href=\"\/collections\/killa\">KILLA<\/a><span>•<\/span>\n      <a href=\"\/collections\/pablo\">PABLO<\/a>\n      <span class=\"pl-cta-sep\">+ 15 more brands<\/span>\n    <\/div>\n    <div class=\"pl-cta-right\">\n      <a href=\"\/collections\/extra-strong\" class=\"pl-cta-shop-btn\">Shop Extra Strong →<\/a>\n    <\/div>\n  <\/div>\n<\/div>\n<style>\n\/* ── CTA Bar ── *\/\n.pl-cta-bar {\n  background: linear-gradient(90deg, #0d1117 0%, #161b22 40%, #0d1117 100%);\n  border-bottom: 1px solid rgba(195,204,166,0.15);\n  padding: 14px 24px;\n}\n.pl-cta-inner {\n  max-width: 1280px;\n  margin: 0 auto;\n  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;\n}\n.pl-cta-left { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }\n.pl-cta-flame { font-size: 1.1rem; }\n.pl-cta-label { color: #c3cca6; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.02em; white-space: nowrap; }\n.pl-cta-center {\n  flex: 1; display: flex; align-items: center; justify-content: center;\n  gap: 8px 14px; flex-wrap: wrap; font-size: 0.82rem; color: #8b949e;\n}\n.pl-cta-center a { color: #ffd700; text-decoration: none; font-weight: 600; letter-spacing: 0.04em; transition: color 0.15s; }\n.pl-cta-center a:hover { color: #fff; }\n.pl-cta-sep { color: #555; font-style: italic; }\n.pl-cta-right { flex-shrink: 0; }\n.pl-cta-shop-btn {\n  display: inline-block; background: #c3cca6; color: #0d1117 !important;\n  font-weight: 700; font-size: 0.8rem; letter-spacing: 0.03em;\n  padding: 8px 18px; border-radius: 20px; text-decoration: none;\n  transition: all 0.2s; white-space: nowrap;\n}\n.pl-cta-shop-btn:hover { background: #d4dbb8; transform: translateY(-1px); color: #0d1117 !important; }\n\n\/* ── Product Cards — Premium Enhancements ── *\/\n.card {\n  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease !important;\n  will-change: transform;\n}\n.card:hover {\n  transform: translateY(-6px) !important;\n  box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;\n}\n.card__media {\n  overflow: hidden;\n  border-radius: var(--card-corner-radius, 10px) !important;\n}\n.card__media img {\n  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) !important;\n}\n.card:hover .card__media img {\n  transform: scale(1.06) !important;\n}\n.card__content {\n  padding: 14px 4px 4px !important;\n}\n.card__title {\n  font-family: var(--font-heading-family, sans-serif) !important;\n  font-weight: 700 !important;\n  letter-spacing: -0.01em !important;\n  color: #1a1a2e !important;\n}\n\n\/* Quick add button enhancement *\/\ncard-quick-add {\n  opacity: 0;\n  transform: translateY(8px);\n  transition: opacity 0.2s, transform 0.2s !important;\n}\n.card:hover card-quick-add {\n  opacity: 1;\n  transform: translateY(0);\n}\n\n\/* Price styling *\/\n.price {\n  font-weight: 600 !important;\n  color: #1a1a2e !important;\n}\n.price__badge-sale {\n  background: #c3cca6 !important;\n  color: #1a1a2e !important;\n}\n\n\/* Marquee text *\/\n.marquee-text {\n  font-size: 0.8rem !important;\n  letter-spacing: 0.08em !important;\n  font-weight: 600 !important;\n}\n\n\/* Section headings *\/\n.section-header h2 {\n  font-family: var(--font-heading-family, sans-serif) !important;\n  font-weight: 800 !important;\n  letter-spacing: -0.02em !important;\n  color: #1a1a2e !important;\n}\n\n\/* ── Responsive ── *\/\n@media (max-width: 900px) {\n  .pl-cta-left { display: none; }\n  .pl-cta-sep { display: none; }\n  .pl-cta-center { justify-content: flex-start; }\n}\n@media (max-width: 600px) {\n  .pl-cta-center { display: none; }\n  .pl-cta-right { width: 100%; }\n  .pl-cta-shop-btn { display: block; text-align: center; }\n  .card:hover { transform: translateY(-3px) !important; }\n}\n<\/style>",
+        "color_scheme": "scheme-1",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "faq_jsonld_schema_5qtd711ebc3cd": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div itemscope itemtype=\"https:\/\/schema.org\/FAQPage\" style=\"display:none;\">\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https:\/\/schema.org\/Question\">\n    <h3 itemprop=\"name\">Are nicotine pouches legal in the UK?<\/h3>\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https:\/\/schema.org\/Answer\">\n      <p itemprop=\"text\">Yes — nicotine pouches are completely legal in the UK. They contain nicotine but not tobacco, which means they fall outside the scope of UK tobacco regulations. They can be bought and sold freely for over-18s. Pouch Lab only sells authentic, regulation-compliant products from recognised brands.<\/p>\n    <\/div>\n  <\/div>\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https:\/\/schema.org\/Question\">\n    <h3 itemprop=\"name\">What is the strongest nicotine pouch available?<\/h3>\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https:\/\/schema.org\/Answer\">\n      <p itemprop=\"text\">Nicotine pouch strengths typically range from 2mg (light) to 20mg+ (extra strong). Brands like ZYN, VELO, Nordic Spirit and KILLA all offer high-strength variants up to 20mg per pouch. The \"strongest\" depends on your tolerance — always start lower and work up. Pouch Lab stocks the full strength spectrum from all major brands.<\/p>\n    <\/div>\n  <\/div>\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https:\/\/schema.org\/Question\">\n    <h3 itemprop=\"name\">How much nicotine is in a typical nicotine pouch?<\/h3>\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https:\/\/schema.org\/Answer\">\n      <p itemprop=\"text\">Most standard nicotine pouches contain between 2mg and 12mg of nicotine per pouch. Premium and strong variants commonly reach 16mg to 20mg. The exact amount varies by brand, product line and strength designation. Always check the individual product label for precise nicotine content.<\/p>\n    <\/div>\n  <\/div>\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https:\/\/schema.org\/Question\">\n    <h3 itemprop=\"name\">What's the difference between nicotine pouches and vapes?<\/h3>\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https:\/\/schema.org\/Answer\">\n      <p itemprop=\"text\">Nicotine pouches are tobacco-free, smoke-free, and vapour-free. They sit between your gum and lip, releasing nicotine orally. Vapes heat e-liquid to produce an inhalable vapour. Pouches are more discreet, require no device, and have zero odours — making them popular in workplaces and social situations where vaping may be restricted.<\/p>\n    <\/div>\n  <\/div>\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https:\/\/schema.org\/Question\">\n    <h3 itemprop=\"name\">Do nicotine pouches show up on drug tests?<\/h3>\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https:\/\/schema.org\/Answer\">\n      <p itemprop=\"text\">Standard workplace drug tests screen for tobacco-specific chemicals, which nicotine pouches do not contain since they are tobacco-free. However, pouches do deliver nicotine, and some specialised tests may detect nicotine metabolites. If you are subject to testing, check your organisation's policy and consider that most routine tests do not flag nicotine pouch use.<\/p>\n    <\/div>\n  <\/div>\n  <div itemscope itemprop=\"mainEntity\" itemtype=\"https:\/\/schema.org\/Question\">\n    <h3 itemprop=\"name\">Are nicotine pouches a better alternative to smoking?<\/h3>\n    <div itemscope itemprop=\"acceptedAnswer\" itemtype=\"https:\/\/schema.org\/Answer\">\n      <p itemprop=\"text\">Public Health England and other UK health bodies recognise nicotine pouches as significantly less harmful than smoking because they contain no tobacco and produce no smoke or tar. While not risk-free, they are widely considered a better option for adult smokers looking to switch to a cleaner nicotine product. Always use nicotine responsibly and as intended — to quit or reduce smoking, not to start.<\/p>\n    <\/div>\n  <\/div>\n<\/div>\n<script type=\"application\/ld+json\">\n{\n  \"@context\": \"https:\/\/schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Are nicotine pouches legal in the UK?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Yes — nicotine pouches are completely legal in the UK. They contain nicotine but not tobacco, which means they fall outside the scope of UK tobacco regulations. They can be bought and sold freely for over-18s. Pouch Lab only sells authentic, regulation-compliant products from recognised brands.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What is the strongest nicotine pouch available?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Nicotine pouch strengths typically range from 2mg (light) to 20mg+ (extra strong). Brands like ZYN, VELO, Nordic Spirit and KILLA all offer high-strength variants up to 20mg per pouch. The strongest option depends on your personal tolerance — always start lower and work up. Pouch Lab stocks the full strength spectrum from all major brands.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"How much nicotine is in a typical nicotine pouch?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Most standard nicotine pouches contain between 2mg and 12mg of nicotine per pouch. Premium strong variants commonly reach 16mg to 20mg. The exact amount varies by brand, product line and strength designation. Always check the individual product label for precise nicotine content.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"What's the difference between nicotine pouches and vapes?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Nicotine pouches are tobacco-free, smoke-free, and vapour-free. They sit between your gum and lip, releasing nicotine orally. Vapes heat e-liquid to produce an inhalable vapour. Pouches are more discreet, require no device, and produce no odours — making them popular in workplaces and social situations where vaping may be restricted.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Do nicotine pouches show up on drug tests?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Standard workplace drug tests screen for tobacco-specific chemicals, which nicotine pouches do not contain since they are tobacco-free. However, pouches do deliver nicotine, and some specialised tests may detect nicotine metabolites. If you are subject to testing, check your organisation's policy and consider that most routine tests do not flag nicotine pouch use.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Are nicotine pouches a better alternative to smoking?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Public Health England and other UK health bodies recognise nicotine pouches as significantly less harmful than smoking because they contain no tobacco and produce no smoke or tar. While not risk-free, they are widely considered a better option for adult smokers looking to switch to a cleaner nicotine product. Always use nicotine responsibly and as intended.\"\n      }\n    }\n  ]\n}\n<\/script>",
+        "color_scheme": "scheme-1",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "seo_intro_4c7a2f": {
+      "type": "nicotine-pouches-intro",
+      "name": "SEO Intro",
+      "settings": {}
+    },
+    "collection_list_VXjWn6": {
+      "type": "collection-list",
+      "blocks": {
+        "group_GgFgJP": {
+          "type": "group",
+          "name": "t:names.header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 6,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_gVBhiD": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2>Popular Brands<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_TRG4tM": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Shop trusted nicotine pouch brands with different strengths, flavour styles and formats.<\/p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_gVBhiD",
+            "text_TRG4tM"
+          ]
+        },
+        "static-collection-card": {
+          "type": "_collection-card",
+          "name": "t:names.collection_card",
+          "static": true,
+          "settings": {
+            "placement": "on_image",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "collection_card_gap": 8,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-dark-earth-charcoal",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10
+          },
+          "blocks": {
+            "collection_title_xUyabL": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "t:names.collection_card_image",
+              "static": true,
+              "settings": {
+                "image_ratio": "square",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection_title_xUyabL"
+          ]
+        }
+      },
+      "block_order": [
+        "group_GgFgJP"
+      ],
+      "name": "t:names.collections_carousel",
+      "settings": {
+        "collection_list": [
+          "velo",
+          "killa",
+          "nordic-spirit",
+          "pablo"
+        ],
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 5,
+        "bento_gap": 8,
+        "rows_gap": 5,
+        "max_collections": 4,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 10,
+        "color_scheme": "scheme-7",
+        "padding-block-start": 21,
+        "padding-block-end": 36
+      }
+    },
+    "product_list_EDUBdR": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_qK4EWG": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h2>High Strength Nicotine Pouches<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_high_strength_sub": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>For experienced users who want a stronger pouch with more noticeable nicotine delivery.<\/p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_qK4EWG",
+            "text_high_strength_sub"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 0,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-earthy-forest",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_hpki3q": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group_jHUdWN": {
+              "type": "_product-card-group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "product_title_gH3cpy": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "tight",
+                    "letter_spacing": "tight",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_anAima": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "h5",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_3jeMwa": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_gH3cpy",
+                "price_anAima",
+                "custom_liquid_3jeMwa"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_gallery_hpki3q",
+            "group_jHUdWN"
+          ]
+        }
+      },
+      "name": "High Strength Nic",
+      "settings": {
+        "collection": "extra-strong",
+        "layout_type": "carousel",
+        "carousel_on_mobile": true,
+        "max_products": 10,
+        "columns": 5,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 12,
+        "rows_gap": 12,
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "color_scheme": "scheme-mono-pure",
+        "padding-block-start": 36,
+        "padding-block-end": 43
+      }
+    },
+    "176831189628db319a": {
+      "type": "_blocks",
+      "blocks": {
+        "custom_liquid_QbyiJJ": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .sleek-promo-banner-wrapper {\n    \/* This trick forces the banner to break out of the theme's container limits and stretch to the edges *\/\n    width: 100vw;\n    position: relative;\n    left: 50%;\n    right: 50%;\n    margin-left: -50vw;\n    margin-right: -50vw;\n    \n    \/* Sleek gradient background *\/\n    background: linear-gradient(90deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);\n    color: #ffffff;\n    \n    \/* Low-profile height *\/\n    padding: 10px 20px; \n    display: flex;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 0 2px 10px rgba(0,0,0,0.2);\n    box-sizing: border-box;\n    overflow: hidden;\n  }\n\n  .sleek-promo-banner-content {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 15px;\n    flex-wrap: wrap;\n    text-align: center;\n  }\n\n  .sleek-promo-badge {\n    background: linear-gradient(90deg, #f59e0b, #fbbf24);\n    color: #000000;\n    padding: 3px 12px;\n    border-radius: 20px;\n    font-family: inherit;\n    font-weight: 800;\n    font-size: 11px;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);\n    white-space: nowrap;\n  }\n\n  .sleek-promo-text {\n    font-family: inherit;\n    font-size: 14px;\n    font-weight: 500;\n    margin: 0;\n    line-height: 1.2;\n    letter-spacing: 0.5px;\n  }\n\n  .sleek-promo-highlight {\n    color: #fbbf24;\n    font-weight: 700;\n  }\n\n  \/* Keeps it looking sharp and landscape on mobile *\/\n  @media (max-width: 768px) {\n    .sleek-promo-banner-wrapper {\n       padding: 8px 12px;\n    }\n    .sleek-promo-banner-content {\n       gap: 8px;\n    }\n    .sleek-promo-text {\n       font-size: 13px;\n    }\n  }\n<\/style>\n\n<div class=\"sleek-promo-banner-wrapper\">\n  <div class=\"sleek-promo-banner-content\">\n    <span class=\"sleek-promo-badge\">Bundle & Save<\/span>\n    <p class=\"sleek-promo-text\">\n      Buy in packs of 10 and <span class=\"sleek-promo-highlight\">save up to £7 in total<\/span> on select brands.\n    <\/p>\n  <\/div>\n<\/div>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "custom_liquid_QbyiJJ"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "collection_list_FALhHL": {
+      "type": "collection-list",
+      "blocks": {
+        "group_kz6cXE": {
+          "type": "group",
+          "name": "t:names.header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_aRRfjJ": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2>Explore Flavours<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_NpDFqg": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Shop mint, berry, citrus, tropical, coffee and more to find the flavour profile that suits you best.<\/p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_aRRfjJ",
+            "text_NpDFqg"
+          ]
+        },
+        "static-collection-card": {
+          "type": "_collection-card",
+          "name": "t:names.collection_card",
+          "static": true,
+          "settings": {
+            "placement": "on_image",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "collection_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-6",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10
+          },
+          "blocks": {
+            "collection_title_QxVRTM": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "nowrap",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#ffffff",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 3,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "t:names.collection_card_image",
+              "static": true,
+              "settings": {
+                "image_ratio": "landscape",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection_title_QxVRTM"
+          ]
+        }
+      },
+      "block_order": [
+        "group_kz6cXE"
+      ],
+      "name": "t:names.collections_grid",
+      "settings": {
+        "collection_list": [
+          "mint-menthol",
+          "fruit",
+          "berry",
+          "citrus",
+          "tropical",
+          "coffee",
+          "cola",
+          "fresh-cool",
+          "ice",
+          "sweet-dessert"
+        ],
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "columns": 5,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 8,
+        "bento_gap": 8,
+        "rows_gap": 8,
+        "max_collections": 4,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 12,
+        "color_scheme": "scheme-7",
+        "padding-block-start": 22,
+        "padding-block-end": 34
+      }
+    },
+    "collection_list_byAgXT": {
+      "type": "collection-list",
+      "blocks": {
+        "group_YiNPNm": {
+          "type": "group",
+          "name": "t:names.header",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_ptAhM4": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2>More Brands<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_f8prtq": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Explore more pouch brands if you already know the flavour profile or format you prefer.<\/p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_ptAhM4",
+            "text_f8prtq"
+          ]
+        },
+        "static-collection-card": {
+          "type": "_collection-card",
+          "name": "t:names.collection_card",
+          "static": true,
+          "settings": {
+            "placement": "on_image",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "collection_card_gap": 8,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-dark-earth-charcoal",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10
+          },
+          "blocks": {
+            "collection_title_RqhmqP": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "t:names.collection_card_image",
+              "static": true,
+              "settings": {
+                "image_ratio": "square",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "solid",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection_title_RqhmqP"
+          ]
+        }
+      },
+      "block_order": [
+        "group_YiNPNm"
+      ],
+      "name": "t:names.collections_carousel",
+      "settings": {
+        "collection_list": [
+          "xqs",
+          "fumi",
+          "clew",
+          "nicpix"
+        ],
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 5,
+        "bento_gap": 8,
+        "rows_gap": 5,
+        "max_collections": 4,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 10,
+        "color_scheme": "scheme-mono-pure",
+        "padding-block-start": 33,
+        "padding-block-end": 51
+      }
+    },
+    "seo_compare_7d91b3": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"snus-compare\">\n  <div class=\"snus-compare__header\">\n    <h2>Snus vs Nicotine Pouches in the UK<\/h2>\n    <p>Many UK shoppers search for snus UK or white snus when they actually want nicotine pouches. The difference is simple: snus contains tobacco, while nicotine pouches are tobacco-free and available across a wide range of brands, strengths and flavours at Pouch Lab.<\/p>\n  <\/div>\n  <div class=\"snus-compare__grid\">\n    <div class=\"snus-compare__item\">\n      <div class=\"snus-compare__num\">01<\/div>\n      <div class=\"snus-compare__content\">\n        <h3>Tobacco-Free<\/h3>\n        <p>Nicotine pouches contain no tobacco leaf.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"snus-compare__item\">\n      <div class=\"snus-compare__num\">02<\/div>\n      <div class=\"snus-compare__content\">\n        <h3>Legal in the UK<\/h3>\n        <p>Buy nicotine pouches online from UK retailers.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"snus-compare__item\">\n      <div class=\"snus-compare__num\">03<\/div>\n      <div class=\"snus-compare__content\">\n        <h3>Discreet Use<\/h3>\n        <p>No smoke, no vapour and no device.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"snus-compare__item\">\n      <div class=\"snus-compare__num\">04<\/div>\n      <div class=\"snus-compare__content\">\n        <h3>More Flavour Choice<\/h3>\n        <p>Mint, fruit, citrus, coffee and cool formats.<\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>\n<style>\n.snus-compare {\n  padding: 48px 24px;\n  max-width: 1280px;\n  margin: 0 auto;\n}\n.snus-compare__header {\n  text-align: center;\n  max-width: 680px;\n  margin: 0 auto 48px;\n}\n.snus-compare__header h2 {\n  font-family: var(--font-heading-family, sans-serif);\n  font-weight: 800;\n  font-size: clamp(1.5rem, 3vw, 2.25rem);\n  letter-spacing: -0.02em;\n  color: #000000;\n  margin: 0 0 16px;\n  line-height: 1.15;\n}\n.snus-compare__header p {\n  font-size: 1rem;\n  line-height: 1.7;\n  color: #444444;\n  margin: 0;\n}\n.snus-compare__grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 2px;\n  background: #e0e0e0;\n  border: 1px solid #e0e0e0;\n  border-radius: 12px;\n  overflow: hidden;\n}\n.snus-compare__item {\n  display: flex;\n  align-items: flex-start;\n  gap: 16px;\n  padding: 28px 24px;\n  background: #ffffff;\n  transition: background 0.2s;\n}\n.snus-compare__item:hover {\n  background: #fafafa;\n}\n.snus-compare__num {\n  font-family: var(--font-heading-family, sans-serif);\n  font-size: 1.5rem;\n  font-weight: 800;\n  color: #000000;\n  line-height: 1;\n  flex-shrink: 0;\n  width: 36px;\n}\n.snus-compare__content h3 {\n  font-family: var(--font-heading-family, sans-serif);\n  font-size: 0.95rem;\n  font-weight: 700;\n  color: #000000;\n  margin: 0 0 6px;\n  letter-spacing: -0.01em;\n}\n.snus-compare__content p {\n  font-size: 0.875rem;\n  line-height: 1.5;\n  color: #555555;\n  margin: 0;\n}\n@media (max-width: 900px) {\n  .snus-compare__grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 540px) {\n  .snus-compare {\n    padding: 32px 16px;\n  }\n  .snus-compare__grid {\n    grid-template-columns: 1fr;\n    gap: 1px;\n  }\n  .snus-compare__header {\n    margin-bottom: 32px;\n  }\n  .snus-compare__item {\n    padding: 20px 16px;\n  }\n}\n<\/style>"
+      }
+    },
+    "section_intro_why": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"premium-destination\">\n  <div class=\"premium-destination__inner\">\n    <div class=\"premium-destination__header\">\n      <p class=\"premium-destination__eyebrow\">Pouch Lab<\/p>\n      <h2>The UK's Premium Nicotine Pouch Destination<\/h2>\n      <p>Shop nicotine pouches from trusted brands including VELO, Nordic Spirit, PABLO, KILLA and XQS. Fast UK delivery, same-day dispatch and authentic products from a specialist retailer.<\/p>\n    <\/div>\n    <div class=\"premium-destination__props\">\n      <div class=\"premium-destination__prop\">\n        <div class=\"premium-destination__icon\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"\/><path d=\"m12 5 7 7-7 7\"\/><\/svg>\n        <\/div>\n        <div>\n          <h3>Free UK Delivery £30+<\/h3>\n          <p>Free delivery on orders over £30 with fast UK shipping.<\/p>\n        <\/div>\n      <\/div>\n      <div class=\"premium-destination__prop\">\n        <div class=\"premium-destination__icon\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"\/><polyline points=\"12 6 12 12 16 14\"\/><\/svg>\n        <\/div>\n        <div>\n          <h3>Same-Day Dispatch<\/h3>\n          <p>Order before 2pm and your parcel ships the same day.<\/p>\n        <\/div>\n      <\/div>\n      <div class=\"premium-destination__prop\">\n        <div class=\"premium-destination__icon\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"\/><circle cx=\"9\" cy=\"7\" r=\"4\"\/><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"\/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"\/><\/svg>\n        <\/div>\n        <div>\n          <h3>10,000+ Happy Customers<\/h3>\n          <p>Trusted by thousands of UK customers shopping nicotine pouches online.<\/p>\n        <\/div>\n      <\/div>\n      <div class=\"premium-destination__prop\">\n        <div class=\"premium-destination__icon\">\n          <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"\/><\/svg>\n        <\/div>\n        <div>\n          <h3>100% Authentic Products<\/h3>\n          <p>Only genuine products from trusted manufacturers and distributors.<\/p>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>\n<style>\n.premium-destination {\n  background: #1C1917;\n}\n.premium-destination__inner {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 72px 32px;\n}\n.premium-destination__header {\n  text-align: center;\n  max-width: 600px;\n  margin: 0 auto 56px;\n}\n.premium-destination__eyebrow {\n  font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;\n  font-size: 0.7rem;\n  font-weight: 700;\n  letter-spacing: 0.2em;\n  text-transform: uppercase;\n  color: #737373;\n  margin: 0 0 14px;\n}\n.premium-destination__header h2 {\n  font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;\n  font-weight: 800;\n  font-size: clamp(1.75rem, 4vw, 2.75rem);\n  letter-spacing: -0.03em;\n  color: #FFFFFF;\n  margin: 0 0 18px;\n  line-height: 1.1;\n}\n.premium-destination__header p {\n  font-family: 'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;\n  font-size: 1.0625rem;\n  line-height: 1.75;\n  color: #A3A3A3;\n  margin: 0;\n}\n.premium-destination__props {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 2px;\n  background: #262626;\n  border-radius: 16px;\n  overflow: hidden;\n  border: 1px solid #262626;\n}\n.premium-destination__prop {\n  display: flex;\n  align-items: flex-start;\n  gap: 14px;\n  padding: 28px 24px;\n  background: #1C1917;\n  transition: background 0.2s ease;\n}\n.premium-destination__prop:hover {\n  background: #1C1917;\n}\n.premium-destination__icon {\n  width: 40px;\n  height: 40px;\n  background: #262626;\n  border-radius: 10px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-shrink: 0;\n  color: #FFFFFF;\n}\n.premium-destination__prop h3 {\n  font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;\n  font-size: 0.9375rem;\n  font-weight: 700;\n  color: #FFFFFF;\n  margin: 0 0 6px;\n  letter-spacing: -0.01em;\n}\n.premium-destination__prop p {\n  font-family: 'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;\n  font-size: 0.8125rem;\n  line-height: 1.55;\n  color: #737373;\n  margin: 0;\n}\n@media (max-width: 900px) {\n  .premium-destination__props {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 600px) {\n  .premium-destination__props {\n    grid-template-columns: 1fr;\n  }\n  .premium-destination__inner {\n    padding: 56px 20px;\n  }\n}\n<\/style>",
+        "color_scheme": "scheme-mono-charcoal",
+        "section_width": "full-width"
+      }
+    },
+    "marquee_4RLY3J": {
+      "type": "marquee",
+      "blocks": {
+        "text_QBLAp8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fast UK delivery • Authentic products • Trusted pouch brands • Beginner to extra strong options •<\/p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_QBLAp8"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-mono-charcoal",
+        "padding-block-start": 9,
+        "padding-block-end": 9,
+        "gap_between_elements": 24
+      }
+    },
+    "section_strength_guide_custom": {
+      "type": "strength-guide-v2",
+      "name": "How to Choose Strength",
+      "settings": {}
+    },
+    "seo_strength_9f2c88": {
+      "type": "how-to-choose-v2",
+      "name": "SEO Strength Guide",
+      "settings": {}
+    },
+    "collection_list_L3WzV8": {
+      "type": "collection-list",
+      "blocks": {
+        "group_HPrxaq": {
+          "type": "group",
+          "name": "t:names.header",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_3NKzzP": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h2>Find Your <strong>Perfect Strength<\/strong><\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_bxbxCe": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Compare light, medium, strong and extra strong options to find the right nicotine level.<\/p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_3NKzzP",
+            "text_bxbxCe"
+          ]
+        },
+        "static-collection-card": {
+          "type": "_collection-card",
+          "name": "t:names.collection_card",
+          "static": true,
+          "settings": {
+            "placement": "on_image",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "collection_card_gap": 0,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-mono-pure",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10
+          },
+          "blocks": {
+            "collection_title_gb6YTh": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-accent--family)",
+                "font_size": "0.625rem",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#ffffff",
+                "corner_radius": 10,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "t:names.collection_card_image",
+              "static": true,
+              "settings": {
+                "image_ratio": "landscape",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "gradient",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection_title_gb6YTh"
+          ]
+        }
+      },
+      "block_order": [
+        "group_HPrxaq"
+      ],
+      "name": "STRENGTHS",
+      "settings": {
+        "collection_list": [
+          "light-strength",
+          "medium-strength",
+          "strong",
+          "extra-strong"
+        ],
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 8,
+        "bento_gap": 8,
+        "rows_gap": 8,
+        "max_collections": 4,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 12,
+        "color_scheme": "scheme-7",
+        "padding-block-start": 25,
+        "padding-block-end": 32
+      }
+    },
+    "product_list_beginner_custom": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_qK4EWG": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h2>Best for Beginners<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_beginner_sub": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Start with smoother, more approachable pouches in light or medium strengths.<\/p>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_qK4EWG",
+            "text_beginner_sub"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 0,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-earthy-forest",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_hpki3q": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group_jHUdWN": {
+              "type": "_product-card-group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "product_title_gH3cpy": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "tight",
+                    "letter_spacing": "tight",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_anAima": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "h5",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_3jeMwa": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_gH3cpy",
+                "price_anAima",
+                "custom_liquid_3jeMwa"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_gallery_hpki3q",
+            "group_jHUdWN"
+          ]
+        }
+      },
+      "name": "BEST FOR BEGINNERS",
+      "settings": {
+        "collection": "light-strength",
+        "layout_type": "carousel",
+        "carousel_on_mobile": true,
+        "max_products": 10,
+        "columns": 5,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 12,
+        "rows_gap": 12,
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "color_scheme": "scheme-mono-pure",
+        "padding-block-start": 40,
+        "padding-block-end": 56
+      }
+    },
+    "why_choose_us": {
+      "type": "why-choose-pouchlab",
+      "settings": {}
+    },
+    "how_to_use": {
+      "type": "how-to-use-pouches",
+      "settings": {}
+    },
+    "product_list_zRDgkB": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_tV4EXM": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h2>Best of VELO<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_aiVAzk": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Shop popular VELO flavours and strengths in one place.<\/p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_tV4EXM",
+            "text_aiVAzk"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 0,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-earthy-forest",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_Wgp63F": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_card_group_xecmmh": {
+              "type": "_product-card-group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "product_title_URp8kQ": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "tight",
+                    "letter_spacing": "tight",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_rmGYGm": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "h5",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_URp8kQ",
+                "price_rmGYGm"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_gallery_Wgp63F",
+            "product_card_group_xecmmh"
+          ]
+        }
+      },
+      "name": "BEST OF VELO",
+      "settings": {
+        "collection": "velo",
+        "layout_type": "carousel",
+        "carousel_on_mobile": true,
+        "max_products": 10,
+        "columns": 5,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 12,
+        "rows_gap": 12,
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "color_scheme": "scheme-mono-pure",
+        "padding-block-start": 48,
+        "padding-block-end": 64
+      }
+    },
+    "section_B8AzBg": {
+      "type": "section",
+      "blocks": {
+        "group_CTLTtB": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 26,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_4zyxrn": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3>Our signature product<\/h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_qcdQcn": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Velo McLaren Sweet Papaya Limited Edition 8mg<\/h2>",
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_rhnajq": {
+              "type": "button",
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify:\/\/collections\/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_4zyxrn",
+            "text_qcdQcn",
+            "button_rhnajq"
+          ]
+        },
+        "image_6ndLp7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/plytix-6926f21ae431a832a395b04c-png.webp",
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_CTLTtB",
+        "image_6ndLp7"
+      ],
+      "disabled": true,
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-4",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "product_list_9Y9g7h": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_WgNfnj": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h2>Best of NORDIC SPIRIT<\/h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_QGQRDh": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Browse balanced Nordic Spirit flavours with easy everyday options.<\/p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_WgNfnj",
+            "text_QGQRDh"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 0,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-earthy-forest",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_AAGRyp": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_card_group_MBLyXr": {
+              "type": "_product-card-group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "product_title_bzY4Pq": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "tight",
+                    "letter_spacing": "tight",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tr6wYQ": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "h5",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_bzY4Pq",
+                "price_tr6wYQ"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_gallery_AAGRyp",
+            "product_card_group_MBLyXr"
+          ]
+        }
+      },
+      "name": "BEST OF NORDIC SPIRIT",
+      "settings": {
+        "collection": "nordic-spirit",
+        "layout_type": "carousel",
+        "carousel_on_mobile": true,
+        "max_products": 10,
+        "columns": 5,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 12,
+        "rows_gap": 12,
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "color_scheme": "scheme-mono-pure",
+        "padding-block-start": 48,
+        "padding-block-end": 64
+      }
+    },
+    "featured_blog_posts_JmgyGf": {
+      "type": "featured-blog-posts",
+      "blocks": {
+        "static-blog-title": {
+          "type": "_featured-blog-posts-title",
+          "static": true,
+          "settings": {
+            "text": "",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-blog-post-card": {
+          "type": "_featured-blog-posts-card",
+          "static": true,
+          "settings": {
+            "alignment": "left",
+            "gap": 8,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-2",
+            "border": "solid",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 10,
+            "padding-block-start": 10,
+            "padding-block-end": 10,
+            "padding-inline-start": 5,
+            "padding-inline-end": 5
+          },
+          "blocks": {
+            "image": {
+              "type": "_featured-blog-posts-image",
+              "static": true,
+              "settings": {
+                "image_ratio": "landscape",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 10
+              },
+              "blocks": {}
+            },
+            "title": {
+              "type": "_heading",
+              "static": true,
+              "settings": {
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "text": "",
+                "read_only": false,
+                "alignment": "left",
+                "show_alignment": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "blog-post-info-text": {
+              "type": "_blog-post-info-text",
+              "static": true,
+              "settings": {
+                "show_date": true,
+                "show_author": true,
+                "type_preset": "",
+                "alignment": "left",
+                "show_alignment": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "blog-post-description": {
+              "type": "_blog-post-description",
+              "static": true,
+              "settings": {
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
+        }
+      },
+      "settings": {
+        "blog": "lab-report",
+        "layout_type": "carousel",
+        "carousel_on_mobile": true,
+        "post_limit": 10,
+        "columns": 3,
+        "mobile_columns": "2",
+        "mobile_card_size": "44cqw",
+        "columns_gap": 4,
+        "rows_gap": 8,
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "gap": 12,
+        "color_scheme": "scheme-mono-pure",
+        "padding-block-start": 34,
+        "padding-block-end": 48
+      }
+    },
+    "seo_faq_b4c1e2": {
+      "type": "section",
+      "blocks": {
+        "text_nPQQqd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Nicotine Pouches UK: FAQs, Brands and Buying Guide<\/h2>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "1.5rem",
+            "line_height": "normal",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "accordion_BqFiXd": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_pxwn3V": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What are nicotine pouches?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_erDTdB": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Nicotine pouches are small, tobacco-free pouches containing nicotine and plant-based fibres. They are placed between the gum and lip to deliver nicotine without smoke or vapour. At Pouch Lab, the range spans everyday, strong and extra-strong products across brands such as VELO, KILLA, Nordic Spirit, PABLO, XQS, FUMI, CLEW, ICEBERG, HELWIT, NEAFS, NICPIX, SNU, UBBS and YEZZI ENERGY.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_erDTdB"
+              ]
+            },
+            "accordion_row_gzjFkM": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How do I use nicotine pouches?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_kNqQxj": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Place one pouch between your upper lip and gum, then leave it in place for 20 to 60 minutes. You do not need to spit, charge a device or light anything. When finished, dispose of it responsibly.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_kNqQxj"
+              ]
+            },
+            "accordion_row_UFnx47": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "What nicotine strength should I choose?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_yaWiNN": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Light strength is usually best for beginners. Medium suits regular users who want a balanced option, while strong and extra strong are better for experienced users who want a heavier nicotine hit.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_yaWiNN"
+              ]
+            },
+            "accordion_row_XFBqCr": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Are nicotine pouches legal in the UK?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_8y4ryM": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Yes. Nicotine pouches are sold in the UK, while snus contains tobacco and is not legal for sale here. That is why searches for snus UK, white snus and tobacco-free snus usually lead to nicotine pouches instead.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_8y4ryM"
+              ]
+            },
+            "accordion_row_X8hYgk": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "How long do nicotine pouches last?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_8WzcT8": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Most nicotine pouches last around 20 to 60 minutes depending on brand and strength. A can usually contains 15 to 20 pouches.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_8WzcT8"
+              ]
+            },
+            "accordion_row_sources": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Where can I read more trusted guidance?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_sources": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>For independent guidance, see <a href=\"https:\/\/ash.org.uk\/key-topics\/nicotine-pouches\" title=\"ASH nicotine pouches guidance\">ASH nicotine pouch guidance<\/a> and the <a href=\"https:\/\/www.nhs.uk\/live-well\/quit-smoking\/nhs-stop-smoking-services-help-you-quit\/\" title=\"NHS stop smoking services\">NHS Stop Smoking Services<\/a>.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_sources"
+              ]
+            },
+            "accordion_row_brands": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Which nicotine pouch brands are most popular in the UK?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_brands": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Pouch Lab stocks a broad range of nicotine pouch brands, so customers can shop by taste, strength and format rather than settling for one brand. Explore mainstream names like VELO, KILLA and Nordic Spirit alongside flavour-led and higher-strength ranges such as PABLO, XQS, FUMI, CLEW, ICEBERG, HELWIT, NEAFS, NICPIX, SNU, UBBS and YEZZI ENERGY.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_brands"
+              ]
+            },
+            "accordion_row_flavours": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "What nicotine pouch flavours are available?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_flavours": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Popular flavour searches include mint, menthol, fruit, berry, citrus, tropical, coffee, cola, ice and sweet dessert profiles. Pouch Lab groups these into clear collections so customers can browse the full range by flavour as well as by strength.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_flavours"
+              ]
+            },
+            "accordion_row_delivery": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How fast is nicotine pouch delivery?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_delivery": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Pouch Lab offers fast UK shipping, with same-day dispatch on orders placed before 2pm and free delivery on orders over £20.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_delivery"
+              ]
+            },
+            "accordion_row_vs_vape": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "How are nicotine pouches different from vaping?",
+                "open_by_default": false,
+                "icon": "question_mark",
+                "width": 20
+              },
+              "blocks": {
+                "text_vape": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Unlike vaping, nicotine pouches require no device, charging, refilling or vapour. They are discreet, smoke-free and simple to carry, which makes them popular for office use, travel and everyday convenience.<\/p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_vape"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_pxwn3V",
+            "accordion_row_gzjFkM",
+            "accordion_row_UFnx47",
+            "accordion_row_XFBqCr",
+            "accordion_row_X8hYgk",
+            "accordion_row_sources",
+            "accordion_row_brands",
+            "accordion_row_flavours",
+            "accordion_row_delivery",
+            "accordion_row_vs_vape"
+          ]
+        }
+      },
+      "block_order": [
+        "text_nPQQqd",
+        "accordion_BqFiXd"
+      ],
+      "name": "SEO FAQ",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-7",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 42,
+        "padding-block-end": 48
+      }
+    },
+    "17684227240d681496": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4dce7e8_3t6FnG": {
+          "type": "ai_gen_block_4dce7e8",
+          "settings": {
+            "heading": "Watch our stories",
+            "heading_alignment": "left",
+            "heading_size": 24,
+            "video_1": "shopify:\/\/files\/videos\/01141920-hj8_watermark_video.mp4",
+            "video_2": "shopify:\/\/files\/videos\/ywyk03vd65rmt0cvmn3vtkyqwm_result_.mp4",
+            "video_3": "shopify:\/\/files\/videos\/22.mp4",
+            "autoplay": true,
+            "loop": true,
+            "muted": true,
+            "show_controls": false,
+            "video_width": 200,
+            "mobile_video_width": 150,
+            "video_spacing": 8,
+            "border_radius": 10,
+            "background_color": "#e8e8e8",
+            "heading_color": "#000000",
+            "scrollbar_color": "#cccccc",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4dce7e8_3t6FnG"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-7",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "hero_iLBwPd",
+    "brand_trust_bar_x7ro7jn2cvbou",
+    "faq_jsonld_schema_5qtd711ebc3cd",
+    "seo_intro_4c7a2f",
+    "collection_list_VXjWn6",
+    "product_list_EDUBdR",
+    "176831189628db319a",
+    "collection_list_FALhHL",
+    "collection_list_byAgXT",
+    "seo_compare_7d91b3",
+    "section_intro_why",
+    "marquee_4RLY3J",
+    "section_strength_guide_custom",
+    "seo_strength_9f2c88",
+    "collection_list_L3WzV8",
+    "product_list_beginner_custom",
+    "why_choose_us",
+    "how_to_use",
+    "product_list_zRDgkB",
+    "section_B8AzBg",
+    "product_list_9Y9g7h",
+    "featured_blog_posts_JmgyGf",
+    "seo_faq_b4c1e2",
+    "17684227240d681496"
+  ]
+}
