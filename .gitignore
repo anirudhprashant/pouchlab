@@ -1,4 +1,9 @@
 
 # SEO automation scripts (stored in /home/ubuntu/scripts/)
 scripts/
+
+# .seo_automation/ — SEO automation artifacts (machine-specific, large data)
 .seo_automation/
+# EXCEPT: changelog must be tracked in git for change history
+!.seo_automation/seo_changelog.json
+!.seo_automation/seo_audit_trend.json
