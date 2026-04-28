@@ -19,5 +19,16 @@
       "priority": "P0",
       "result": "test passed"
     }
+  },
+  {
+    "timestamp": "2026-04-28T00:52:11.568821+00:00Z",
+    "category": "product_seo",
+    "description": "Product SEO batch: optimized 23 products (cursor moved to 30/101)",
+    "details": {
+      "products_optimized": 23,
+      "total_optimized": 23,
+      "product_cursor": 30,
+      "run_type": "agency_batch"
+    }
   }
 ]
