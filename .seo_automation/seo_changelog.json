@@ -108,5 +108,18 @@
       "check_type": "meta_description",
       "fix_approach": "shopify_api"
     }
+  },
+  {
+    "timestamp": "2026-04-29T10:23:41.943102+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/collections/sweet-indulgent",
+    "details": {
+      "action_id": "P0-7",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/collections/sweet-indulgent",
+      "result": "Smart collection description set: Sweet and indulgent nicotine pouches \u2014 dessert and confectio \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
