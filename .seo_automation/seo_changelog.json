@@ -134,5 +134,18 @@
       "check_type": "meta_description",
       "fix_approach": "add_metafield"
     }
+  },
+  {
+    "timestamp": "2026-04-29T10:27:39.090898+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/products/fumi-blackcurrant ",
+    "details": {
+      "action_id": "P0-9",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/products/fumi-blackcurrant",
+      "result": "Meta description set: FUMI Blackcurrant nicotine pouches \u2014 premium quality. Shop F \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "add_metafield"
+    }
   }
 ]
