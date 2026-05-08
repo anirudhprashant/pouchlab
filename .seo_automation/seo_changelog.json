@@ -160,5 +160,18 @@
       "check_type": "meta_description",
       "fix_approach": "add_metafield"
     }
+  },
+  {
+    "timestamp": "2026-05-08T15:26:16.337468+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/blogs/lab-report/nordic-spi",
+    "details": {
+      "action_id": "P0-2",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/blogs/lab-report/nordic-spirit-nicotine-pouches-uk-complete-brand-guide",
+      "result": "Summary updated for nordic-spirit-nicotine-pouches-uk-complete-brand-guide \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
