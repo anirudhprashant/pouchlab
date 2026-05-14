@@ -264,5 +264,18 @@
       "check_type": "meta_description",
       "fix_approach": "shopify_api"
     }
+  },
+  {
+    "timestamp": "2026-05-14T08:00:48.840778+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/collections/extra-strong \u2014 ",
+    "details": {
+      "action_id": "P0-8",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/collections/extra-strong",
+      "result": "Smart collection description set: Extra strong nicotine pouches for experienced users. High ni \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
