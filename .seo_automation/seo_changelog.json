@@ -186,5 +186,18 @@
       "check_type": "meta_description",
       "fix_approach": "shopify_api"
     }
+  },
+  {
+    "timestamp": "2026-05-14T08:00:12.039954+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/blogs/lab-report/what-are-v",
+    "details": {
+      "action_id": "P0-2",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/blogs/lab-report/what-are-velo-pouches-made-of-expert-guide",
+      "result": "Summary updated for what-are-velo-pouches-made-of-expert-guide \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
