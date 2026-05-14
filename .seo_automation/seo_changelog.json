@@ -238,5 +238,18 @@
       "check_type": "meta_description",
       "fix_approach": "shopify_api"
     }
+  },
+  {
+    "timestamp": "2026-05-14T08:00:37.610682+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/collections/cola \u2014 High imp",
+    "details": {
+      "action_id": "P0-6",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/collections/cola",
+      "result": "Smart collection description set: Cola flavoured nicotine pouches \u2014 a classic favourite. Shop  \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
