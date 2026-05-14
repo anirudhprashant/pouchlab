@@ -303,5 +303,18 @@
       "check_type": "meta_description",
       "fix_approach": "shopify_api"
     }
+  },
+  {
+    "timestamp": "2026-05-14T08:01:12.339979+00:00Z",
+    "category": "internal_links",
+    "description": "Internal linking audit and improvement",
+    "details": {
+      "action_id": "P3-2",
+      "priority": "P3",
+      "target_url": "",
+      "result": "Added 26 internal/product links",
+      "check_type": "",
+      "fix_approach": ""
+    }
   }
 ]
