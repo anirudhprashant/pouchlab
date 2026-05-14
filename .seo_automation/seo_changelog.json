@@ -251,5 +251,18 @@
       "check_type": "meta_description",
       "fix_approach": "shopify_api"
     }
+  },
+  {
+    "timestamp": "2026-05-14T08:00:43.005105+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/collections/cuba-products \u2014",
+    "details": {
+      "action_id": "P0-7",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/collections/cuba-products",
+      "result": "Smart collection description set: CUBA nicotine pouches \u2014 bold Cuban-inspired flavours. Shop t \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
