@@ -290,5 +290,18 @@
       "check_type": "meta_description",
       "fix_approach": "shopify_api"
     }
+  },
+  {
+    "timestamp": "2026-05-14T08:00:59.956847+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/collections/fumi \u2014 High imp",
+    "details": {
+      "action_id": "P0-10",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/collections/fumi",
+      "result": "Smart collection description set: FUMI nicotine pouches \u2014 premium quality nicotine pouches. Sh \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
