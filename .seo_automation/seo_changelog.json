@@ -316,5 +316,18 @@
       "check_type": "",
       "fix_approach": ""
     }
+  },
+  {
+    "timestamp": "2026-05-16T15:04:31.598473+00:00Z",
+    "category": "meta_fix",
+    "description": "CRITICAL: [GSC] low_ctr_meta: https://pouchlab.co.uk/blogs/lab-report/why-footba",
+    "details": {
+      "action_id": "P0-2",
+      "priority": "P0",
+      "target_url": "https://pouchlab.co.uk/blogs/lab-report/why-footballers-use-nicotine-pouches",
+      "result": "Summary updated for why-footballers-use-nicotine-pouches \u2014 verified \u2705",
+      "check_type": "meta_description",
+      "fix_approach": "shopify_api"
+    }
   }
 ]
